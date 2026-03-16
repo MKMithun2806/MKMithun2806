@@ -66,7 +66,7 @@ Deep hands-on experience designing and managing multi-container environments on 
 Experienced in building and deploying **Model Context Protocol (MCP) servers** to extend AI assistants with custom tooling.
 - **Custom MCP Architecture:** Designing tool schemas, handlers, and transport layers (stdio / SSE) from scratch.
 - **Security Tooling Integration:** Bridging offensive recon tools and pipeline data into LLM-accessible interfaces.
-- **Self-Hosted Deployment:** Running MCP servers on Raspberry Pi / Ubuntu ARM64 integrated with Ollama and Groq backends.
+- **Self-Hosted Deployment:** Running MCP servers on Raspberry Pi / Ubuntu ARM64 integrated with Ollama backends.
 
 ---
 
