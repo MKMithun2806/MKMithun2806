@@ -119,5 +119,8 @@ I build software using AI-assisted development workflows, focusing on rapid infr
 # 🎮 Beyond the Terminal
 
 When the monitors are off, I'm usually in high-mobility FPS or immersive story-driven worlds.
-- **Favs:** DOOM Eternal, Titanfall 2, Halo Infinite, Crysis, Battlefield.
-- 
+- **Favs:** DOOM Eternal, Titanfall 2, Halo Infinite, Crysis, Battlefield 6, Valorant, Batman Trilogy, Ghost of Tsushima, All AC Games ,etc
+
+- Im also a cinephile
+My favorites are; The Space Odyssey, Interstellar, and inception
+If we talk TV shows i like; Peaky Blinders, Stranger Things and Mr.Robot
