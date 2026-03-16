@@ -75,8 +75,7 @@ Experienced in building and deploying **Model Context Protocol (MCP) servers** t
 - **VDP Roadmap:** Currently focusing on my board exams, with plans to transition into active Bug Bounty hunting once I turn 15 and the academic season concludes.
 - **Advanced C2:** Researching stealthy communication channels for C2 traffic.
 - **Active Directory Lab:** Building internal AD environments to practice bloodhound analysis and group policy exploitation.
-- **Intelligent Recon:** Pipelines that trigger deep scans only when NetAlertX detects new MAC addresses.
-- **AI-Augmented Recon:** Integrating MCP servers with n8n to deliver LLM-summarized exploit intelligence directly into Recon Pipeline reports.
+  
 
 ---
 
