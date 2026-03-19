@@ -1,7 +1,7 @@
 # 👋 Sup, I'm Mithun Krish
 You can call me Mitch 
 
-### 🛰️ Reconnaissance Engineering • Red Team Aspirant • Systems & Infrastructure Specialist
+### 🛰️ Developer of Random things • Red Team Aspirant • Systems & Infrastructure Specialist
 
 I design systems that **observe, analyze, and scale**. My work sits at the intersection of **offensive security research and cloud-native engineering**, focusing on building high-performance scanning pipelines and resilient private infrastructure. 
 
