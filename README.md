@@ -9,12 +9,42 @@ I design systems that **observe, analyze, and scale**. My work sits at the inter
 
 ---
 
-# 🚀 Featured Project: Watchdog 🐕‍🦺
-### *Distributed Cloud-Native Recon from a Flipper Zero*
-I engineered a hardware-to-cloud bridge that allows for one-tap reconnaissance deployments from a physical device.
-* **The Trigger:** Custom JavaScript app on **Flipper Zero** communicating via Serial to an ESP32 WiFi Dev Board.
-* **The Pipeline:** **n8n** orchestrates **AWS EC2** "Golden AMI" instances to perform high-compute scans.
-* **The Data Lifecycle:** Automated S3 sync to a local **Raspberry Pi NAS**, automated cleanup, and **AI-driven analysis** for immediate attack vector identification. Also sent to a custom streamlit dashboard for further analysis
+#🚀 Featured Project: Watchdog 🐕‍🦺
+
+Hardware-Triggered, Cloud-Native Reconnaissance Platform
+
+I built an end-to-end offensive security platform that bridges physical hardware with scalable cloud infrastructure, enabling one-tap reconnaissance deployments from a handheld device.
+
+⸻
+
+⚡ Architecture Overview
+
+🔘 Edge Trigger Layer
+A custom JavaScript application running on the Flipper Zero communicates over serial with an ESP32, acting as a wireless bridge to initiate remote scan workflows.
+
+☁️ Orchestration Layer
+Workflows are coordinated using n8n, which dynamically provisions pre-configured Amazon EC2 instances (Golden AMIs) for distributed, high-performance reconnaissance.
+
+⚔️ Execution Layer
+Ephemeral cloud instances execute automated recon pipelines (service enumeration, vulnerability detection, and attack path modeling), then self-terminate to optimize cost and operational hygiene.
+
+📦 Data Pipeline
+Scan artifacts are:
+	•	Synced to Amazon S3 for persistence
+	•	Mirrored to a local Raspberry Pi NAS for offline access
+	•	Automatically cleaned up to maintain a minimal cloud footprint
+
+🧠 Intelligence Layer
+Custom AI-driven analysis processes raw recon output to:
+	•	Extract high-signal vulnerabilities
+	•	Generate realistic attack paths
+	•	Prioritize findings based on exploitability
+
+📊 Visualization Layer
+A custom-built Streamlit dashboard provides:
+	•	Real-time scan control and monitoring
+	•	Interactive report exploration
+	•	Payload generation and operator tooling
 
 ---
 
