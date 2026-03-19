@@ -14,7 +14,7 @@ I design systems that **observe, analyze, and scale**. My work sits at the inter
 I engineered a hardware-to-cloud bridge that allows for one-tap reconnaissance deployments from a physical device.
 * **The Trigger:** Custom JavaScript app on **Flipper Zero** communicating via Serial to an ESP32 WiFi Dev Board.
 * **The Pipeline:** **n8n** orchestrates **AWS EC2** "Golden AMI" instances to perform high-compute scans.
-* **The Data Lifecycle:** Automated S3 sync to a local **Raspberry Pi NAS**, automated cleanup, and **AI-driven analysis** for immediate attack vector identification.
+* **The Data Lifecycle:** Automated S3 sync to a local **Raspberry Pi NAS**, automated cleanup, and **AI-driven analysis** for immediate attack vector identification. Also sent to a custom streamlit dashboard for further analysis
 
 ---
 
