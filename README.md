@@ -53,7 +53,6 @@ A custom-built Streamlit dashboard provides:
 ### 🖥️ System Exploitation & Persistence
 - **Shells & Payloads:** Experienced in weaponizing reverse shells and establishing persistent backdoors.
 - **Privilege Escalation:** Manual and automated PrivEsc on Linux and Windows environments to reach Root/SYSTEM.
-- **Post-Exploitation:** Data exfiltration, credential harvesting, and clearing tracks.
 - **C2 & AD:** Actively learning and deploying Command & Control frameworks and Active Directory exploitation (Kerberoasting, Lateral Movement).
 
 ### 📶 WiFi & Network Domination
