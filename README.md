@@ -9,7 +9,7 @@ I design systems that **observe, analyze, and scale**. My work sits at the inter
 
 ---
 
-#🚀 Featured Project: Watchdog 🐕‍🦺
+### Featured Project: Watchdog 🐕‍🦺
 
 Hardware-Triggered, Cloud-Native Reconnaissance Platform
 
