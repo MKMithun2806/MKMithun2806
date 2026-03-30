@@ -80,6 +80,7 @@ A distributed cloud footprint used for reconnaissance workloads and security res
 
 ### 🖥️ Homelab (The Control Layer)
 A high-density **Raspberry Pi 4 (8GB)** environment running a 17-container stack. This serves as the brain for my reconnaissance pipelines and local observability.
+More about it [Here](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md)
 - **Networking Depth:** Deep-diving into L2/L3 protocols. I have a strong grasp of networking fundamentals, but I recognize that true mastery is a lifelong pursuit—especially in the complex world of distributed systems.
 - **Observability:** Prometheus, Grafana, and Node Exporter.
 - **Security & Recon:** NetAlertX, Pi-hole, and n8n (Workflow engine).
