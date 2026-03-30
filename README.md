@@ -287,3 +287,9 @@ I don't build apps. I build systems.
 <p align="center">
 <b>Build infrastructure that sees everything — so nothing goes unnoticed.</b>
 </p>
+
+# If u Plan on stalking me
+
+[About me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md)
+[Detailed explanation of homeserver](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md)
+[Security Reports](https://github.com/MKMithun2806/Security-Reports)
