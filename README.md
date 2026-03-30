@@ -34,7 +34,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 <h3 align="center">Development</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,bash,js,powershell" />
+  <img src="https://skillicons.dev/icons?i=python,bash,js,powershell,cursor,claudecode" />
 </p>
 
 <h3 align="center">Observability & Control</h3>
