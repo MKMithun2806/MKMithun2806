@@ -60,9 +60,7 @@ INTEREST    : Breaking infrastructure > web apps
 mitch@watchdog:~$ tools --stack
 
 Recon       : subfinder, naabu, httpx, nuclei, nmap, amass
-
 Wireless    : aircrack-ng, hashcat, tcpdump, wireshark
-
 Exploitation: metasploit, custom payloads
 Infra       : n8n, docker, tailscale, proxmox
 
