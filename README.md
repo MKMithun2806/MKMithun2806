@@ -84,6 +84,7 @@ Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Strea
 ---
 
 <h2 align="center">⚙️ Infrastructure Ecosystem</h2>
+
 ```mermaid
 flowchart TB
 
