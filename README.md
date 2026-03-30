@@ -51,6 +51,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 
 ```bash
 mitch@watchdog:~$ whoami
+FUll INFO.  : [Github Whoami](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md)
 ROLE        : Red Team Aspirant
 FOCUS       : Systems / Network / Physical Security
 INTEREST    : Breaking infrastructure > web apps
