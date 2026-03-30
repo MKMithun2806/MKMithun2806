@@ -40,7 +40,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 <h3 align="center">Observability & Control</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=grafana,prometheus" />
+  <img src="https://skillicons.dev/icons?i=grafana,prometheus,proxmox" />
 </p>
 
 <br>
