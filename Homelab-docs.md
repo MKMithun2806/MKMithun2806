@@ -224,6 +224,8 @@ All stored locally and streamed through the media stack.
 ---
 
 ## Roadmap
+
+```mermaid
 flowchart TB
 
 %% ================= CLIENT LAYER =================
@@ -309,6 +311,8 @@ end
 RECON --> S3
 VM1 --> PI_STORAGE
 AI_HOST --> PI_STORAGE
+```
+
 ### Infrastructure
 
 - Build and deploy Proxmox cluster
