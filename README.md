@@ -2,7 +2,7 @@ i<!-- ======================= -->
 <!--        HEADER          -->
 <!-- ======================= -->
 
-<h1 align="center">👋 Sup, I'm Mithun Krish</h1>
+<h1 align="center">Sup, I'm Mithun Krish</h1>
 <h3 align="center">You can call me Mitch</h3>
 
 <p align="center">
@@ -19,7 +19,7 @@ i<!-- ======================= -->
 
 I design systems that observe, analyze, and scale. My work sits at the intersection of offensive security research and cloud-native engineering, focusing on building high-performance scanning pipelines and resilient private infrastructure.
 
-My ultimate goal is to operate as a Red Team Operator. I focus on the foundation—systems, networks, and physical security. I'm not interested in web hacking; I'd rather crack a system shell or bypass a physical lock than hunt for bugs in a web form.
+My goal is to operate as a Red Team Operator. I focus on the foundation—systems, networks, and physical security. I'm not interested in web hacking; I'd rather crack a system shell or bypass a physical lock than hunt for bugs in a web form.
 
 ---
 
@@ -79,7 +79,7 @@ A custom-built Streamlit dashboard provides:
 ## 📝 Vulnerability Reporting & Documentation
 - **Professional Deliverables:** Proficient in translating technical exploits into industry-standard vulnerability reports.  
 - **Risk Assessment:** Familiar with PTES methodology and CVSS-style risk matrices to accurately categorize findings.  
-- **Live Documentation:** Security-Reports Repository  
+- **Live Documentation:** [Security-Reports Repository](https://github.com/MKMithun2806/Security-Reports)
 
 ---
 
