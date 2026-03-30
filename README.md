@@ -83,7 +83,7 @@ Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Strea
 
 ---
 
-<h2 align="center">⚙️ Infrastructure Ecosystem</h2>
+<h2 align="center">⚙️ [Infrastructure Ecosystem](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md)</h2>
 
 ```bash
 [Control Layer]
