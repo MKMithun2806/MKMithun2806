@@ -85,6 +85,8 @@ Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Strea
 
 <h2 align="center">⚙️ Infrastructure Ecosystem</h2>
 
+# Hypothesised 
+
 ```mermaid
 flowchart TB
 
@@ -171,6 +173,58 @@ end
 RECON --> S3
 VM1 --> PI_STORAGE
 AI_HOST --> PI_STORAGE
+```
+# Current 
+
+```mermaid
+flowchart TB
+
+subgraph Clients
+    A[Home Devices]
+    B[Studio Devices]
+end
+
+subgraph Network
+    TS[Tailscale Mesh VPN]
+    DNS[Pi-hole DNS]
+end
+
+A --> TS
+B --> TS
+TS --> DNS
+
+subgraph Raspberry_Pi["Raspberry Pi (Core Node)"]
+
+    DNS --> SERVICES
+
+    subgraph SERVICES[Docker Services]
+        HOMEPAGE[Homepage]
+        N8N[n8n]
+        GRAF[Grafana]
+        PROM[Prometheus]
+        NODE[Node Exporter]
+        CODE[code-server]
+        GITEA[Gitea]
+        JELLY[Jellyfin]
+        NAVI[Navidrome]
+        QBIT[qBittorrent]
+        IT[IT-Tools]
+        WATCHDOG[Watchdog UI]
+        PORTAINER[Portainer]
+        SB[SilverBullet]
+    end
+
+    subgraph Reverse_Proxy["nginx (SilverBullet only)"]
+        NGINX[nginx]
+    end
+
+    NGINX --> SB
+end
+
+PROM --> GRAF
+NODE --> PROM
+QBIT --> JELLY
+QBIT --> NAVI
 ```
 ---
 
