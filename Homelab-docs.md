@@ -224,7 +224,91 @@ All stored locally and streamed through the media stack.
 ---
 
 ## Roadmap
+flowchart TB
 
+%% ================= CLIENT LAYER =================
+subgraph Clients
+    U1[Operator Dashboard]
+    U2[AI Interfaces / MCP Clients]
+end
+
+%% ================= NETWORK =================
+subgraph Network
+    TS[Tailscale Mesh VPN]
+end
+
+U1 --> TS
+U2 --> TS
+
+%% ================= CONTROL LAYER =================
+subgraph Control["Raspberry Pi (Control Plane)"]
+
+    N8N[n8n Orchestrator]
+    WATCH[Watchdog UI]
+    MCP_LOCAL[Local MCP Gateway]
+
+end
+
+TS --> N8N
+TS --> WATCH
+TS --> MCP_LOCAL
+
+%% ================= OROX CLUSTER =================
+subgraph OROX["Oryx Mix Cluster (Proxmox HA - Planned)"]
+
+    subgraph Compute
+        VM1[Recon Workers]
+        VM2[Service Nodes]
+        VM3[Internal Tooling]
+    end
+
+    subgraph Storage
+        NAS[Distributed Storage / Backups]
+    end
+
+    VM1 --> NAS
+    VM2 --> NAS
+    VM3 --> NAS
+
+end
+
+N8N --> VM1
+WATCH --> VM2
+
+%% ================= OCI AMPERE =================
+subgraph OCI["Oracle Cloud - Ampere A1 (Tailnet Integrated)"]
+
+    MCP_AI[MCP Servers]
+    AI_HOST[AI Hosting / LLM Inference]
+    MC[Minecraft Servers]
+
+end
+
+N8N --> MCP_AI
+MCP_LOCAL --> MCP_AI
+
+%% ================= AWS =================
+subgraph AWS["AWS EC2"]
+
+    MCP1[Dedicated MCP Servers]
+    MCP2[Tool Execution Nodes]
+    RECON[Ephemeral Recon Instances]
+
+end
+
+N8N --> RECON
+MCP_LOCAL --> MCP1
+MCP_LOCAL --> MCP2
+
+%% ================= DATA FLOW =================
+subgraph Data
+    S3[Amazon S3]
+    PI_STORAGE[Local Pi Storage]
+end
+
+RECON --> S3
+VM1 --> PI_STORAGE
+AI_HOST --> PI_STORAGE
 ### Infrastructure
 
 - Build and deploy Proxmox cluster
