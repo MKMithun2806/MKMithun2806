@@ -56,6 +56,7 @@ mitch@watchdog:~$ whoami
 ROLE        : Red Team Aspirant
 FOCUS       : Systems / Network / Physical Security
 INTEREST    : Breaking infrastructure > web apps
+"You build pipelines — not one-off exploits."
 
 mitch@watchdog:~$ tools --stack
 
