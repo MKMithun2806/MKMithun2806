@@ -29,6 +29,8 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
   <img src="https://skillicons.dev/icons?i=linux,docker,aws,kubernetes,nginx,raspberrypi" />
   <br/>
   <img src="https://img.shields.io/badge/n8n-Workflow%20Automation-00ff88?style=flat-square" />
+  <img src="https://img.shields.io/badge/OpenWrt-Router%20OS-00ff88?style=flat-square&logo=openwrt&logoColor=black" />
+  <img src="https://img.shields.io/badge/pfSense-Firewall-00ff88?style=flat-square&logo=pfsense&logoColor=black" />
 </p>
 
 <h3 align="center">Development</h3>
