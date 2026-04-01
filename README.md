@@ -81,7 +81,7 @@ access granted: keep going.
 
 ---
 
-<h2 align="center">🛰️ Flagship Project — Watchdog</h2>
+<h2 align="center">🛰️ Flagship Project — [Watchdog](https://github.com/MKMithun2806/Project-Watchdog)</h2>
 
 <p align="center">
 Hardware-triggered, cloud-native reconnaissance platform.
