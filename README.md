@@ -89,7 +89,6 @@ Hardware-triggered, cloud-native reconnaissance platform.
 
 <p align="center">
 Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Streamlit UI
-  [more info](https://github.com/MKMithun2806/Project-Watchdog)
 </p>
 
 ---
