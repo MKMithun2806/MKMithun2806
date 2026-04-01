@@ -61,22 +61,19 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 ```bash
 mitch@watchdog:~$ whoami
 ROLE        : Red Team Aspirant
-FOCUS       : Systems / Network / Physical Security
-INTEREST    : Breaking infrastructure > web apps
-"You build pipelines — not one-off exploits."
+FOCUS       : Internal Networks / Infrastructure / Physical Security
+INTEREST    : Recon automation, attack simulation, lab-built tooling
+STYLE       : Build systems that scale offensive work
 
 mitch@watchdog:~$ tools --stack
 
 Recon       : subfinder, naabu, httpx, nuclei, nmap, amass
 Wireless    : aircrack-ng, hashcat, tcpdump, wireshark
 Exploitation: metasploit, custom payloads
-Infra       : n8n, docker, tailscale, proxmox
+Infra       : n8n, docker, tailscale, proxmox, swarm
 
 mitch@watchdog:~$ echo $CURRENT_OBJECTIVE
-"Build scalable offensive infrastructure and operate as a Red Team Operator"
-
-mitch@watchdog:~$ sudo access system
-access granted: keep going.
+"Build scalable offensive infrastructure and grow into a real Red Team operator"
 ```
 
 ---
