@@ -194,8 +194,9 @@ subgraph Clients
     B[Studio Devices]
 end
 
-subgraph Network
-    TS[Tailscale Mesh VPN]
+subgraph Network_Fabric["Tailscale Mesh (The Glue)"]
+    TS[Tailscale VPN]
+    K3S_NET[K3s Flannel Interface]
     DNS[Pi-hole DNS]
 end
 
@@ -203,38 +204,52 @@ A --> TS
 B --> TS
 TS --> DNS
 
-subgraph Raspberry_Pi["Raspberry Pi (Core Node)"]
-
-    DNS --> SERVICES
-
-    subgraph SERVICES[Docker Services]
+subgraph Oracle_Cloud["Oracle A1 (Cloud Brain)"]
+    direction TB
+    subgraph CLOUD_SERVICES[High Availability Layer]
         HOMEPAGE[Homepage]
-        N8N[n8n]
-        GRAF[Grafana]
-        PROM[Prometheus]
-        NODE[Node Exporter]
-        CODE[code-server]
-        GITEA[Gitea]
+        IT[IT-Tools]
+        GITEA_C[Gitea Instance]
+        N8N_C[n8n Instance]
+        SB_C[SilverBullet Instance]
+    end
+    
+    subgraph CLOUD_STORAGE[Longhorn Cloud Mirror]
+        SYNC_DATA[(Replicated Data)]
+    end
+end
+
+subgraph Raspberry_Pi["Raspberry Pi (Home Muscle)"]
+    direction TB
+    subgraph HOME_SERVICES[Local & Heavy Layer]
         JELLY[Jellyfin]
         NAVI[Navidrome]
         QBIT[qBittorrent]
-        IT[IT-Tools]
         WATCHDOG[Watchdog UI]
-        PORTAINER[Portainer]
-        SB[SilverBullet]
+        PRO_STACK[Prometheus + Grafana]
     end
 
-    subgraph Reverse_Proxy["nginx (SilverBullet only)"]
-        NGINX[nginx]
+    subgraph LOCAL_STORAGE[Direct Mounts]
+        NAS[/1TB NTFS NAS/]
+        SYNC_PI[(Replicated Data Mirror)]
     end
-
-    NGINX --> SB
 end
 
-PROM --> GRAF
-NODE --> PROM
+%% Connections
+TS --> K3S_NET
+K3S_NET --> CLOUD_SERVICES
+K3S_NET --> HOME_SERVICES
+
+%% Storage Mapping
+NAS --> JELLY
+NAS --> NAVI
+NAS --> QBIT
+SYNC_DATA <--> TS <--> SYNC_PI
+
+%% Logic
+PRO_STACK -.-> CLOUD_SERVICES
+PRO_STACK -.-> HOME_SERVICES
 QBIT --> JELLY
-QBIT --> NAVI
 ```
 ---
 
