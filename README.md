@@ -10,7 +10,7 @@
 <br />
 
 <p align="center">
-I build systems that <b>observe, analyze, and scale</b>.
+I build systems that <b>observe, analyze, and act</b>.
 </p>
 
 <p align="center">
@@ -74,6 +74,9 @@ Infra       : n8n, docker, tailscale, proxmox, swarm
 
 mitch@watchdog:~$ echo $CURRENT_OBJECTIVE
 "Build scalable offensive infrastructure and grow into a real Red Team operator"
+
+mitch@watchdog:~$ echo $PHILOSOPHY
+"I actually have to know the infrastructure to break it"
 ```
 
 ---
@@ -302,6 +305,8 @@ It amplifies it.
 <p align="center">
 I don't build apps. I build systems.
 </p>
+
+<h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools — it is to understand systems deeply enough to break them responsibly. </p>
 
 <p align="center">
 <b>Build infrastructure that sees everything — so nothing goes unnoticed.</b>
