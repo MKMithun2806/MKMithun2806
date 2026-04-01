@@ -300,12 +300,6 @@ It amplifies it.
 
 ---
 
-<h2 align="center">🚀 Philosophy</h2>
-
-<p align="center">
-I don't build apps. I build systems.
-</p>
-
 <h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools — it is to understand systems deeply enough to break them responsibly. </p>
 
 <p align="center">
