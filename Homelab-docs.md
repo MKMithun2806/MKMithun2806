@@ -6,8 +6,7 @@
 
 ## Preview
 
-<!-- Insert homepage screenshot here -->
-<!-- ![Homepage](./assets/homepage.png) -->
+<img width="1121" height="713" alt="image" src="https://github.com/user-attachments/assets/c40eaf9d-102c-4da7-a0c3-50f1734feabc" />
 
 ---
 
