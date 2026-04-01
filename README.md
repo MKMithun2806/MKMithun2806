@@ -179,20 +179,20 @@ RECON_W --> ST1
 %% Relationships
 K3S_NET --> K3S_SERVICES
 ```
-# Current (In Progress)
+# Current
 
 ```mermaid
 flowchart TB
 
 subgraph Clients
-    A[Home Devices]
-    B[Studio Devices]
+A[Home Devices]
+B[Studio Devices]
 end
 
 subgraph Network_Fabric["Tailscale Mesh (The Glue)"]
-    TS[Tailscale VPN]
-    K3S_NET[K3s Flannel Interface]
-    DNS[Pi-hole DNS]
+TS[Tailscale VPN]
+SWARM_NET[Docker Overlay Network]
+DNS[Pi-hole DNS]
 end
 
 A --> TS
@@ -200,40 +200,59 @@ B --> TS
 TS --> DNS
 
 subgraph Oracle_Cloud["Oracle A1 (Cloud Brain)"]
-    direction TB
-    subgraph CLOUD_SERVICES[High Availability Layer]
-        HOMEPAGE[Homepage]
-        IT[IT-Tools]
-        GITEA_C[Gitea Instance]
-        N8N_C[n8n Instance]
-        SB_C[SilverBullet Instance]
-    end
-    
-    subgraph CLOUD_STORAGE[Longhorn Cloud Mirror]
-        SYNC_DATA[(Replicated Data)]
-    end
+direction TB
+
+```
+subgraph SWARM_MANAGER[Swarm Manager Node]
+    MANAGER[Docker Swarm Manager]
+end
+
+subgraph CLOUD_SERVICES[High Availability Layer]
+    HOMEPAGE[Homepage]
+    IT[IT-Tools]
+    GITEA_C[Gitea Instance]
+    N8N_C[n8n Instance]
+    SB_C[SilverBullet Instance]
+end
+
+subgraph CLOUD_STORAGE[Shared Volume / Sync Layer]
+    SYNC_DATA[(Replicated Data)]
+end
+```
+
 end
 
 subgraph Raspberry_Pi["Raspberry Pi (Home Muscle)"]
-    direction TB
-    subgraph HOME_SERVICES[Local & Heavy Layer]
-        JELLY[Jellyfin]
-        NAVI[Navidrome]
-        QBIT[qBittorrent]
-        WATCHDOG[Watchdog UI]
-        PRO_STACK[Prometheus + Grafana]
-    end
+direction TB
 
-    subgraph LOCAL_STORAGE[Direct Mounts]
-        NAS[/1TB NTFS NAS/]
-        SYNC_PI[(Replicated Data Mirror)]
-    end
+```
+subgraph SWARM_WORKER[Swarm Worker Node]
+    WORKER[Docker Swarm Worker]
+end
+
+subgraph HOME_SERVICES[Local & Heavy Layer]
+    JELLY[Jellyfin]
+    NAVI[Navidrome]
+    QBIT[qBittorrent]
+    WATCHDOG[Watchdog UI]
+    PRO_STACK[Prometheus + Grafana]
+end
+
+subgraph LOCAL_STORAGE[Direct Mounts]
+    NAS[/1TB NTFS NAS/]
+    SYNC_PI[(Replicated Data Mirror)]
+end
+```
+
 end
 
 %% Connections
-TS --> K3S_NET
-K3S_NET --> CLOUD_SERVICES
-K3S_NET --> HOME_SERVICES
+TS --> SWARM_NET
+SWARM_NET --> MANAGER
+SWARM_NET --> WORKER
+
+MANAGER --> CLOUD_SERVICES
+MANAGER --> HOME_SERVICES
 
 %% Storage Mapping
 NAS --> JELLY
@@ -245,6 +264,7 @@ SYNC_DATA <--> TS <--> SYNC_PI
 PRO_STACK -.-> CLOUD_SERVICES
 PRO_STACK -.-> HOME_SERVICES
 QBIT --> JELLY
+
 ```
 ---
 
