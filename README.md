@@ -310,6 +310,8 @@ I don't build apps. I build systems.
 
 # If u Plan on stalking me
 
+*i really need a server computer or rack to use proxmox on smth othern then in VMware😭😭😭*
+
 *Built. Broken. Documented.*
 
 [🧠 About me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md)
