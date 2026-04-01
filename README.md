@@ -106,85 +106,80 @@ subgraph Clients
     U2[AI Interfaces / MCP Clients]
 end
 
-%% ================= NETWORK =================
-subgraph Network
-    TS[Tailscale Mesh VPN]
+%% ================= NETWORK MESH =================
+subgraph Network_Fabric[Tailscale Mesh + K3s Overlay]
+    TS[Tailscale VPN]
+    K8S_CNI[K3s Networking]
 end
 
 U1 --> TS
 U2 --> TS
 
-%% ================= CONTROL LAYER =================
-subgraph Control["Raspberry Pi (Control Plane)"]
+%% ================= BUNKER LAYER =================
+subgraph Pi_Bunker["Raspberry Pi (The Vault / Seed)"]
+    direction TB
+    K3S_M[K3s Master 1]
+    DNS[Pi-hole / Unbound]
+    TS_SUB[Tailscale Subnet Router]
+end
 
+TS --> K3S_M
+TS --> DNS
+
+%% ================= ORYX CLUSTER (HA) =================
+subgraph OROX["Oryx Mix Cluster (Proxmox HA Nodes)"]
+    direction TB
+    
+    subgraph PVE_HA[Proxmox VE Cluster]
+        K3S_W1[K3s Worker / HA VM]
+        K3S_W2[K3s Worker / HA VM]
+        LXC_TOOLS[LXC Containers - Light Tools]
+    end
+
+    subgraph HA_Storage[CEPH / ZFS Shared Storage]
+        ST1[(Distributed NVMe Cluster)]
+        BK[(Proxmox Backup Server)]
+    end
+
+    K3S_W1 <--> ST1
+    K3S_W2 <--> ST1
+end
+
+%% ================= DISTRIBUTED SERVICES =================
+subgraph K3S_SERVICES[K3s Orchestration Layer]
     N8N[n8n Orchestrator]
     WATCH[Watchdog UI]
-    MCP_LOCAL[Local MCP Gateway]
-
+    MCP_GATE[MCP Gateway]
+    SB[SilverBullet]
+    RECON_W[Recon Workers]
 end
 
-TS --> N8N
-TS --> WATCH
-TS --> MCP_LOCAL
+K3S_M --> K3S_W1
+K3S_M --> K3S_W2
 
-%% ================= OROX CLUSTER =================
-subgraph OROX["Oryx Mix Cluster (Proxmox HA - Planned)"]
-
-    subgraph Compute
-        VM1[Recon Workers]
-        VM2[Service Nodes]
-        VM3[Internal Tooling]
-    end
-
-    subgraph Storage
-        NAS[Distributed Storage / Backups]
-    end
-
-    VM1 --> NAS
-    VM2 --> NAS
-    VM3 --> NAS
-
+%% ================= CLOUD EXTENSIONS =================
+subgraph OCI["Oracle Cloud (Ampere A1)"]
+    OCI_W[K3s Cloud Worker]
+    AI_HOST[LLM Inference / MCP Servers]
+    MC[Minecraft Server]
 end
 
-N8N --> VM1
-WATCH --> VM2
-
-%% ================= OCI AMPERE =================
-subgraph OCI["Oracle Cloud - Ampere A1 (Tailnet Integrated)"]
-
-    MCP_AI[MCP Servers]
-    AI_HOST[AI Hosting / LLM Inference]
-    MC[Minecraft Servers]
-
+subgraph AWS["AWS Cloud (Ephemeral)"]
+    EC2_SPOT[Spot Instance Recon]
+    S3[Amazon S3 Bucket]
 end
 
-N8N --> MCP_AI
-MCP_LOCAL --> MCP_AI
+%% ================= DATA FLOWS =================
+N8N --> OCI_W
+N8N --> EC2_SPOT
+MCP_GATE --> AI_HOST
+EC2_SPOT --> S3
+RECON_W --> ST1
 
-%% ================= AWS =================
-subgraph AWS["AWS EC2"]
-
-    MCP1[Dedicated MCP Servers]
-    MCP2[Tool Execution Nodes]
-    RECON[Ephemeral Recon Instances]
-
-end
-
-N8N --> RECON
-MCP_LOCAL --> MCP1
-MCP_LOCAL --> MCP2
-
-%% ================= DATA FLOW =================
-subgraph Data
-    S3[Amazon S3]
-    PI_STORAGE[Local Pi Storage]
-end
-
-RECON --> S3
-VM1 --> PI_STORAGE
-AI_HOST --> PI_STORAGE
+%% Relationships
+K3S_NET --> K3S_SERVICES
 ```
-# Current 
+# Current (In Progress)
 
 ```mermaid
 flowchart TB
