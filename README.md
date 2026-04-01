@@ -81,7 +81,7 @@ access granted: keep going.
 
 ---
 
-<h2 align="center">🛰️ Flagship Project — [Watchdog](https://github.com/MKMithun2806/Project-Watchdog)</h2>
+<h2 align="center">🛰️ Flagship Project — Watchdog</h2>
 
 <p align="center">
 Hardware-triggered, cloud-native reconnaissance platform.
@@ -89,6 +89,7 @@ Hardware-triggered, cloud-native reconnaissance platform.
 
 <p align="center">
 Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Streamlit UI
+  [more info](https://github.com/MKMithun2806/Project-Watchdog)
 </p>
 
 ---
