@@ -183,26 +183,20 @@ K3S_NET --> K3S_SERVICES
 
 ```mermaid
 flowchart TB
-
 subgraph Clients
 A[Home Devices]
 B[Studio Devices]
 end
-
 subgraph Network_Fabric["Tailscale Mesh (The Glue)"]
 TS[Tailscale VPN]
 SWARM_NET[Docker Overlay Network]
 DNS[Pi-hole DNS]
 end
-
 A --> TS
 B --> TS
 TS --> DNS
-
 subgraph Oracle_Cloud["Oracle A1 (Cloud Brain)"]
-direction TB
 
-```
 subgraph SWARM_MANAGER[Swarm Manager Node]
     MANAGER[Docker Swarm Manager]
 end
@@ -218,14 +212,9 @@ end
 subgraph CLOUD_STORAGE[Shared Volume / Sync Layer]
     SYNC_DATA[(Replicated Data)]
 end
-```
-
 end
-
 subgraph Raspberry_Pi["Raspberry Pi (Home Muscle)"]
-direction TB
 
-```
 subgraph SWARM_WORKER[Swarm Worker Node]
     WORKER[Docker Swarm Worker]
 end
@@ -239,32 +228,25 @@ subgraph HOME_SERVICES[Local & Heavy Layer]
 end
 
 subgraph LOCAL_STORAGE[Direct Mounts]
-    NAS[/1TB NTFS NAS/]
+    NAS[/"1TB NTFS NAS"/]
     SYNC_PI[(Replicated Data Mirror)]
 end
-```
-
 end
-
 %% Connections
 TS --> SWARM_NET
 SWARM_NET --> MANAGER
 SWARM_NET --> WORKER
-
 MANAGER --> CLOUD_SERVICES
 MANAGER --> HOME_SERVICES
-
 %% Storage Mapping
 NAS --> JELLY
 NAS --> NAVI
 NAS --> QBIT
 SYNC_DATA <--> TS <--> SYNC_PI
-
 %% Logic
 PRO_STACK -.-> CLOUD_SERVICES
 PRO_STACK -.-> HOME_SERVICES
 QBIT --> JELLY
-
 ```
 ---
 
