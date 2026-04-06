@@ -95,159 +95,70 @@ Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Strea
 
 <h2 align="center">⚙️ Infrastructure Ecosystem</h2>
 
-# Hypothesised 
+# Current Architecture
 
 ```mermaid
 flowchart TB
-
-%% ================= CLIENT LAYER =================
-subgraph Clients
-    U1[Operator Dashboard]
-    U2[AI Interfaces / MCP Clients]
-end
-
-%% ================= NETWORK MESH =================
-subgraph Network_Fabric[Tailscale Mesh + K3s Overlay]
+    subgraph Clients
+    A[Home Devices]
+    B[Studio Devices]
+    end
+    subgraph Network_Fabric["Tailscale Mesh (The Glue)"]
     TS[Tailscale VPN]
-    K8S_CNI[K3s Networking]
-end
-
-U1 --> TS
-U2 --> TS
-
-%% ================= BUNKER LAYER =================
-subgraph Pi_Bunker["Raspberry Pi (The Vault / Seed)"]
-    direction TB
-    K3S_M[K3s Master 1]
-    DNS[Pi-hole / Unbound]
-    TS_SUB[Tailscale Subnet Router]
-end
-
-TS --> K3S_M
-TS --> DNS
-
-%% ================= ORYX CLUSTER (HA) =================
-subgraph OROX["Oryx Mix Cluster (Proxmox HA Nodes)"]
-    direction TB
-    
-    subgraph PVE_HA[Proxmox VE Cluster]
-        K3S_W1[K3s Worker / HA VM]
-        K3S_W2[K3s Worker / HA VM]
-        LXC_TOOLS[LXC Containers - Light Tools]
+    SWARM_NET[Docker Overlay Network]
+    DNS[Pi-hole DNS]
     end
-
-    subgraph HA_Storage[CEPH / ZFS Shared Storage]
-        ST1[(Distributed NVMe Cluster)]
-        BK[(Proxmox Backup Server)]
+    A --> TS
+    B --> TS
+    TS --> DNS
+    subgraph OpenClaw_EC2["OpenClaw EC2 (The Brain)"]
+        EC2_AWS["AWS t4g.small"]
+        subgraph OPENCLAW_CORE[OpenClaw Core]
+            OC_GATEWAY[Gateway]
+            OC_AGENT[Steve The Agent]
+            OC_SKILLS[Skills & Tools]
+        end
+        subgraph EC2_SERVICES[Services]
+            N8N_EC2[n8n]
+            GITEA_EC2[Gitea]
+            SILVER_EC2[SilverBullet]
+        end
     end
-
-    K3S_W1 <--> ST1
-    K3S_W2 <--> ST1
-end
-
-%% ================= DISTRIBUTED SERVICES =================
-subgraph K3S_SERVICES[K3s Orchestration Layer]
-    N8N[n8n Orchestrator]
-    WATCH[Watchdog UI]
-    MCP_GATE[MCP Gateway]
-    SB[SilverBullet]
-    RECON_W[Recon Workers]
-end
-
-K3S_M --> K3S_W1
-K3S_M --> K3S_W2
-
-%% ================= CLOUD EXTENSIONS =================
-subgraph OCI["Oracle Cloud (Ampere A1)"]
-    OCI_W[K3s Cloud Worker]
-    AI_HOST[LLM Inference / MCP Servers]
-    MC[Minecraft Server]
-end
-
-subgraph AWS["AWS Cloud (Ephemeral)"]
-    EC2_SPOT[Spot Instance Recon]
-    S3[Amazon S3 Bucket]
-end
-
-%% ================= DATA FLOWS =================
-N8N --> OCI_W
-N8N --> EC2_SPOT
-MCP_GATE --> AI_HOST
-EC2_SPOT --> S3
-RECON_W --> ST1
-
-%% Relationships
-K3S_NET --> K3S_SERVICES
+    subgraph Raspberry_Pi["Raspberry Pi (Home Muscle)"]
+        subgraph PI_CORE[Pi Core]
+            PI_DOCKER[Docker/Podman]
+            PI_TAIL[Tailscale Client]
+        end
+        subgraph HOME_SERVICES[Local Ops]
+            JELLY[Jellyfin]
+            NAVI[Navidrome]
+            WATCHDOG[Watchdog UI]
+            GRAFANA[Prometheus + Grafana]
+        end
+        subgraph PI_STORAGE[Local Storage]
+            NAS_1TB[/"1TB Local NAS"/]
+        end
+    end
+    subgraph Windows_Studio["Windows 10 Studio (The Vault)"]
+        WIN_DESK[Desktop Environment]
+        subgraph WIN_STORAGE[Studio NAS]
+            WIN_NAS[/"Large Media & Vault Storage"/]
+        end
+        subgraph DEV_TOOLS[Dev Environment]
+            VS_CODE[VS Code / Cursor]
+            TERM[Terminal / WSL]
+        end
+    end
+    %% Connections
+    TS --> SWARM_NET
+    SWARM_NET --> EC2_AWS
+    SWARM_NET --> PI_DOCKER
+    SWARM_NET --> WIN_DESK
+    OC_AGENT -.->|Controls| PI_DOCKER
+    OC_AGENT -.->|Manages| WIN_DESK
+    WIN_NAS <-->|Sync| NAS_1TB
 ```
-# Current
 
-```mermaid
-flowchart TB
-subgraph Clients
-A[Home Devices]
-B[Studio Devices]
-end
-subgraph Network_Fabric["Tailscale Mesh (The Glue)"]
-TS[Tailscale VPN]
-SWARM_NET[Docker Overlay Network]
-DNS[Pi-hole DNS]
-end
-A --> TS
-B --> TS
-TS --> DNS
-subgraph Oracle_Cloud["Oracle A1 (Cloud Brain)"]
-
-subgraph SWARM_MANAGER[Swarm Manager Node]
-    MANAGER[Docker Swarm Manager]
-end
-
-subgraph CLOUD_SERVICES[High Availability Layer]
-    HOMEPAGE[Homepage]
-    IT[IT-Tools]
-    GITEA_C[Gitea Instance]
-    N8N_C[n8n Instance]
-    SB_C[SilverBullet Instance]
-end
-
-subgraph CLOUD_STORAGE[Shared Volume / Sync Layer]
-    SYNC_DATA[(Replicated Data)]
-end
-end
-subgraph Raspberry_Pi["Raspberry Pi (Home Muscle)"]
-
-subgraph SWARM_WORKER[Swarm Worker Node]
-    WORKER[Docker Swarm Worker]
-end
-
-subgraph HOME_SERVICES[Local & Heavy Layer]
-    JELLY[Jellyfin]
-    NAVI[Navidrome]
-    QBIT[qBittorrent]
-    WATCHDOG[Watchdog UI]
-    PRO_STACK[Prometheus + Grafana]
-end
-
-subgraph LOCAL_STORAGE[Direct Mounts]
-    NAS[/"1TB NTFS NAS"/]
-    SYNC_PI[(Replicated Data Mirror)]
-end
-end
-%% Connections
-TS --> SWARM_NET
-SWARM_NET --> MANAGER
-SWARM_NET --> WORKER
-MANAGER --> CLOUD_SERVICES
-MANAGER --> HOME_SERVICES
-%% Storage Mapping
-NAS --> JELLY
-NAS --> NAVI
-NAS --> QBIT
-SYNC_DATA <--> TS <--> SYNC_PI
-%% Logic
-PRO_STACK -.-> CLOUD_SERVICES
-PRO_STACK -.-> HOME_SERVICES
-QBIT --> JELLY
-```
 ---
 
 <h2 align="center">🤖 AI-Augmented Development</h2>
@@ -263,9 +174,15 @@ Workflow:
 - MCP servers for tool integration
 - Automated recon + analysis pipelines
 
-Philosophy:
-AI doesn't replace engineering.
-It amplifies it.
+OpenClaw Setup:
+- "Steve" (The Agent): Running on AWS EC2 t4g.small
+- Role: Personal infrastructure assistant & automation engine
+- Capabilities: 
+  - GitHub management (PRs, Issues, Commits)
+  - Infrastructure monitoring & health checks
+  - Automated email & calendar management
+  - Slack/Telegram integration for real-time updates
+- Philosophy: AI doesn't replace engineering. It amplifies it.
 ```
 
 ---
