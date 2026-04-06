@@ -100,7 +100,7 @@ Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Strea
 ```mermaid
 flowchart TB
     subgraph Edge["Edge Network & Security"]
-        ISP((Internet))
+        ISP([Internet])
         UDM[Ubiquiti Dream Machine / EdgeRouter]
         FW[Advanced Firewall Rules / IDS]
         ISP --> UDM
@@ -112,13 +112,9 @@ flowchart TB
         PVE1[Proxmox Node 1]
         PVE2[Proxmox Node 2]
         PVE3[Proxmox Node 3]
-        
-        subgraph CEPH["Ceph Distributed Storage"]
-            CEPH_OSD1[(OSD Pool 1)]
-            CEPH_OSD2[(OSD Pool 2)]
-            CEPH_OSD3[(OSD Pool 3)]
-        end
-
+        CEPH_OSD1[(OSD Pool 1)]
+        CEPH_OSD2[(OSD Pool 2)]
+        CEPH_OSD3[(OSD Pool 3)]
         PVE1 <--> CEPH_OSD1
         PVE2 <--> CEPH_OSD2
         PVE3 <--> CEPH_OSD3
@@ -143,8 +139,8 @@ flowchart TB
     PVE2 --- K3S_W3
 
     subgraph Cloud_Ext["Cloud Extensions"]
-        ORACLE[Oracle Cloud A1 (Backup Node)]
-        RPI[Raspberry Pi (Satellite)]
+        ORACLE[Oracle Cloud A1 - Backup Node]
+        RPI[Raspberry Pi - Satellite]
     end
 
     FW <--> ORACLE
@@ -157,7 +153,7 @@ flowchart TB
         AI[MCP Servers / LLM Inference]
     end
 
-    K3S_Grid --> Services
+    K3s_Grid --> Services
 ```
 
 # 🏠 Current Architecture
