@@ -282,7 +282,7 @@ OpenClaw Setup:
 
 # If u Plan on stalking me
 
-*i really need a server computer or rack to use proxmox on smth othern then in VMware😭😭😭*
+*i really need a server computer or rack to use proxmox on smth othern then in VMware😭😭*
 
 *Built. Broken. Documented.*
 
