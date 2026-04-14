@@ -281,7 +281,7 @@ OpenClaw Setup:
 <h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools it is to understand systems deeply enough to break them. </p>
 
 # If u Plan on stalking me
-
+*im 14*
 *i really need a server computer or rack to use proxmox on smth othern then in VMware😭😭*
 
 *Built. Broken. Documented.*
