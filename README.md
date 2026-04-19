@@ -1,4 +1,4 @@
-<p align="center">
+.<p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=VT323&size=65&pause=1200&color=00ff88&background=000000&center=true&vCenter=true&width=880&height=120&lines=%3CRed+Team+Aspirant+/%3E;%3CInfrastructure+Engineer+/%3E;%3COffensive+Security+/%3E;%3CCloud+stuff+/%3E;%3CAI-Augmented+Builder+/%3E" />
 </p>
 
@@ -249,12 +249,6 @@ OpenClaw Setup:
 ---
 
 <h2 align="center">📊 GitHub Metrics</h2>
-
-<p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=MKMithun2806&show_icons=true&bg_color=0d1117&title_color=00ff88&text_color=c9d1d9&icon_color=00ff88&border_color=00ff88" height="165"/>
-  
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=MKMithun2806&layout=compact&bg_color=0d1117&title_color=00ff88&text_color=c9d1d9&border_color=00ff88" height="165"/>
-</p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=MKMithun2806&background=0D1117&border=00ff88&stroke=00ff88&ring=00ff88&fire=00ff88&currStreakLabel=00ff88&sideLabels=C9D1D9&currStreakNum=C9D1D9&dates=8B949E&sideNums=C9D1D9" height="165"/>
