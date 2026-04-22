@@ -270,13 +270,13 @@ OpenClaw Setup:
 
 ---
 
-# 🧠 Mithun Krish
+# Myself
 
 *Built. Broken. Documented.*
 
 ---
 
-## 🚀 Featured Projects
+## Top Projects
 
 - 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog)
 
