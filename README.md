@@ -300,6 +300,6 @@ OpenClaw Setup:
 
 - 🧠 [About Me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md): Nah, Dont Read This
 
-- 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i ‘pwned‘
+- 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i ‘pwned‘ ( Hacked )
 
 - [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
