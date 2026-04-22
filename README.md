@@ -46,7 +46,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 <h3 align="center">Network & Control Plane</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=grafana,prometheus,arch" />
+  <img src="https://skillicons.dev/icons?i=grafana,prometheus,rust" />
   <br/><br/>
   <img src="https://img.shields.io/badge/Tailscale-Mesh%20VPN-00ff88?style=flat-square&logo=tailscale&logoColor=black" />
   <img src="https://img.shields.io/badge/Proxmox-VE-E57000?style=flat-square&logo=proxmox&logoColor=white" />
