@@ -36,7 +36,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 <h3 align="center">Development</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,bash,js,powershell,git" />
+  <img src="https://skillicons.dev/icons?i=python,bash,js,rust,git" />
   <p align="center">
   <img src="https://img.shields.io/badge/Claude-Code-00ff88?style=flat-square&logo=anthropic&logoColor=black" />
   <img src="https://img.shields.io/badge/Gemini-CLI-00ff88?style=flat-square&logo=google-gemini&logoColor=black" />
@@ -46,7 +46,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 <h3 align="center">Network & Control Plane</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=grafana,prometheus,rust" />
+  <img src="https://skillicons.dev/icons?i=grafana,prometheus,ansible,terraform" />
   <br/><br/>
   <img src="https://img.shields.io/badge/Tailscale-Mesh%20VPN-00ff88?style=flat-square&logo=tailscale&logoColor=black" />
   <img src="https://img.shields.io/badge/Proxmox-VE-E57000?style=flat-square&logo=proxmox&logoColor=white" />
