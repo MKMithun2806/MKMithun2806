@@ -302,6 +302,4 @@ OpenClaw Setup:
 
 - 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports)
 
-[⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md)
-
-<img width="1121" height="713" alt="image" src="https://github.com/user-attachments/assets/623224bf-4367-414f-88af-123dc084cfb2" />
+- [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md)
