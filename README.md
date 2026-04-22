@@ -270,15 +270,37 @@ OpenClaw Setup:
 
 ---
 
-# If u Plan on stalking me
-*im 14*
-*i really need a server computer or rack to use proxmox on smth othern then in VMware😭😭*
+# 🧠 Mithun Krish
 
 *Built. Broken. Documented.*
 
-[🧠 About me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md)
+---
 
-[🔴 Security Reports (Real Exploits & Findings)](https://github.com/MKMithun2806/Security-Reports)
+## 🚀 Featured Projects
+
+- 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog)
+
+  Automation-first recon pipeline that scans, analyzes, and generates AI-powered security reports
+
+- 🌐 [NetMalper](https://github.com/MKMithun2806/NetMalper)
+
+  Network scanning and mapping tool for discovering devices and attack surface in a Graph
+
+- 🧪 [VulnMalper](https://github.com/MKMithun2806/VulnMalper)
+
+  Vulnerability pipeline that eats NetMalper graphs. Fingerprint → Scan → Verify, with every stage feeding the next.
+  
+- 🐉 [Kali Mcp Server](https://github.com/MKMithun2806/Kali-pentesting-mcp)
+
+  Security testing tools exposed as MCP tools for use with Claude Desktop via Docker MCP Toolkit.
+
+---
+
+## 🔗 Explore More
+
+- 🧠 [About Me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md)  
+
+- 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports)
 
 [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md)
 
