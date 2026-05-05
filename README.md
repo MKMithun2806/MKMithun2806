@@ -38,7 +38,7 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,bash,js,rust,git" />
   <p align="center">
-  <img src="https://img.shields.io/badge/Claude-Code-00ff88?style=flat-square&logo=anthropic&logoColor=black" />
+  <img src="https://img.shields.io/badge/Open-code-00ff88?style=flat-square" />
   <img src="https://img.shields.io/badge/Gemini-CLI-00ff88?style=flat-square&logo=google-gemini&logoColor=black" />
   <img src="https://img.shields.io/badge/Cursor-AI%20Editor-00ff88?style=flat-square&logo=cursor&logoColor=black" />
 </p>
