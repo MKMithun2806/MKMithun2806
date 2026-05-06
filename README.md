@@ -278,7 +278,7 @@ OpenClaw Setup:
 
 ## Top Projects
 
-- 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog); In Progress [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
+- 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog); In Progress: [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
 
   Automation-first recon pipeline that scans, analyzes, and generates AI-powered security reports
 
