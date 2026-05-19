@@ -14,7 +14,7 @@ I build systems that <b>observe, analyze, and act</b>.
 </p>
 
 <p align="center">
-Offensive security meets cloud-native engineering — designing recon pipelines, private infrastructure, and AI-powered tooling.
+Building offensive infrastructure from the ground up; recon pipelines, cloud-native tooling, and the automation that makes it all scale.
 </p>
 
 <br>
