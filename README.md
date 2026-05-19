@@ -21,6 +21,60 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 
 ---
 
+## Top Projects
+
+- 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog); In Progress: [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
+
+  Automation-first recon pipeline that scans, analyzes, and generates AI-powered security reports
+
+
+- 🌐 [NetMalper](https://github.com/MKMithun2806/NetMalper)
+
+  Network scanning and mapping tool for discovering devices and attack surface in a Graph
+
+- 🧪 [VulnMalper](https://github.com/MKMithun2806/VulnMalper)
+
+  Vulnerability pipeline that eats NetMalper graphs. Fingerprint → Scan → Verify, with every stage feeding the next.
+  
+- 🐉 [Kali Mcp Server](https://github.com/MKMithun2806/Kali-pentesting-mcp)
+
+  Security testing tools exposed as MCP tools for use with Claude Desktop via Docker MCP Toolkit.
+
+- In Progress
+
+  Im working on something called is-it-safe but it called chase.com safe to scan: Still under active experimentation.
+
+---
+
+<h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools it is to understand systems deeply enough to break them. </p>
+
+---
+
+<h2 align="center">💀 Offensive Profile</h2>
+
+```bash
+mitch@watchdog:~$ whoami
+ROLE        : Red Team Aspirant
+FOCUS       : Internal Networks / Infrastructure / Physical Security
+INTEREST    : Recon automation, attack simulation, lab-built tooling
+STYLE       : Build systems that scale offensive work
+
+mitch@watchdog:~$ tools --stack
+
+Recon       : subfinder, naabu, httpx, nuclei, nmap, amass
+Wireless    : aircrack-ng, hashcat, tcpdump, wireshark
+Exploitation: metasploit, custom payloads
+Infra       : n8n, docker, tailscale, proxmox, swarm
+
+mitch@watchdog:~$ echo $CURRENT_OBJECTIVE
+"Build scalable offensive infrastructure and grow into a real Red Team operator"
+
+mitch@watchdog:~$ echo $PHILOSOPHY
+"I actually have to know the infrastructure to break it"
+```
+
+---
+
 <h2 align="center">⚡ Core Stack</h2>
 
 <h3 align="center">Infrastructure</h3>
@@ -56,27 +110,28 @@ Offensive security meets cloud-native engineering — designing recon pipelines,
 
 ---
 
-<h2 align="center">💀 Offensive Profile</h2>
+<h2 align="center">🤖 AI-Augmented Development</h2>
+
+<p align="center">
+AI is not a chatbot — it's part of the system.
+</p>
 
 ```bash
-mitch@watchdog:~$ whoami
-ROLE        : Red Team Aspirant
-FOCUS       : Internal Networks / Infrastructure / Physical Security
-INTEREST    : Recon automation, attack simulation, lab-built tooling
-STYLE       : Build systems that scale offensive work
+Workflow:
+- Architecture design with AI
+- Rapid infra scripting (Bash / Python)
+- MCP servers for tool integration
+- Automated recon + analysis pipelines
 
-mitch@watchdog:~$ tools --stack
-
-Recon       : subfinder, naabu, httpx, nuclei, nmap, amass
-Wireless    : aircrack-ng, hashcat, tcpdump, wireshark
-Exploitation: metasploit, custom payloads
-Infra       : n8n, docker, tailscale, proxmox, swarm
-
-mitch@watchdog:~$ echo $CURRENT_OBJECTIVE
-"Build scalable offensive infrastructure and grow into a real Red Team operator"
-
-mitch@watchdog:~$ echo $PHILOSOPHY
-"I actually have to know the infrastructure to break it"
+OpenClaw Setup:
+- "Steve" (The Agent): Running on AWS EC2 t4g.small
+- Role: Personal infrastructure assistant & automation engine
+- Capabilities: 
+  - GitHub management (PRs, Issues, Commits)
+  - Infrastructure monitoring & health checks
+  - Automated email & calendar management
+  - Slack/Telegram integration for real-time updates
+- Philosophy: AI doesn't replace engineering. It amplifies it.
 ```
 
 ---
@@ -222,34 +277,6 @@ flowchart TB
 
 ---
 
-<h2 align="center">🤖 AI-Augmented Development</h2>
-
-<p align="center">
-AI is not a chatbot — it's part of the system.
-</p>
-
-```bash
-Workflow:
-- Architecture design with AI
-- Rapid infra scripting (Bash / Python)
-- MCP servers for tool integration
-- Automated recon + analysis pipelines
-
-OpenClaw Setup:
-- "Steve" (The Agent): Running on AWS EC2 t4g.small
-- Role: Personal infrastructure assistant & automation engine
-- Capabilities: 
-  - GitHub management (PRs, Issues, Commits)
-  - Infrastructure monitoring & health checks
-  - Automated email & calendar management
-  - Slack/Telegram integration for real-time updates
-- Philosophy: AI doesn't replace engineering. It amplifies it.
-```
----
-<h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools it is to understand systems deeply enough to break them. </p>
-
----
-
 <h2 align="center">📊 GitHub Metrics</h2>
 
 <p align="center">
@@ -276,35 +303,10 @@ OpenClaw Setup:
 
 ---
 
-## Top Projects
-
-- 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog); In Progress: [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
-
-  Automation-first recon pipeline that scans, analyzes, and generates AI-powered security reports
-
-
-- 🌐 [NetMalper](https://github.com/MKMithun2806/NetMalper)
-
-  Network scanning and mapping tool for discovering devices and attack surface in a Graph
-
-- 🧪 [VulnMalper](https://github.com/MKMithun2806/VulnMalper)
-
-  Vulnerability pipeline that eats NetMalper graphs. Fingerprint → Scan → Verify, with every stage feeding the next.
-  
-- 🐉 [Kali Mcp Server](https://github.com/MKMithun2806/Kali-pentesting-mcp)
-
-  Security testing tools exposed as MCP tools for use with Claude Desktop via Docker MCP Toolkit.
-
-- In Progress
-
-  Im working on something called is-it-safe but it called chase.com safe to scan: Still under active experimentation.
-
----
-
 ## 🔗 Explore More
 
 - 🧠 [About Me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md): Nah, Dont Read This
 
-- 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i ‘pwned‘ ( Hacked )
+- 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i 'pwned' ( Hacked )
 
 - [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
