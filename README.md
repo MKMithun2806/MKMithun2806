@@ -295,6 +295,10 @@ OpenClaw Setup:
 
   Security testing tools exposed as MCP tools for use with Claude Desktop via Docker MCP Toolkit.
 
+- In Progress
+
+  Im working on something called is-it-safe but it called chase.com safe to scan: ill make it public when it actually works lol
+
 ---
 
 ## 🔗 Explore More
