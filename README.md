@@ -297,7 +297,7 @@ OpenClaw Setup:
 
 - In Progress
 
-  Im working on something called is-it-safe but it called chase.com safe to scan: ill make it public when it actually works lol
+  Im working on something called is-it-safe but it called chase.com safe to scan: Still under active experimentation.
 
 ---
 
