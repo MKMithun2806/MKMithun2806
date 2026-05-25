@@ -40,9 +40,13 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
   Security testing tools exposed as MCP tools for use with Claude Desktop via Docker MCP Toolkit.
 
+- 🐚 [ShellCraft](https://github.com/MKMithun2806/ShellCraft)
+
+  A lightweight, interactive Go CLI tool for generating obfuscated, multi-platform reverse shell payloads on the fly.
+
 - In Progress
 
-  Im working on something called is-it-safe but it called chase.com safe to scan: Still under active experimentation.
+  Im working on something called ploit-malper: Still under active experimentation.
 
 ---
 
