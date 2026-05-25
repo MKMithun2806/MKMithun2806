@@ -65,9 +65,9 @@ STYLE       : Build systems that scale offensive work
 
 mitch@watchdog:~$ tools --stack
 
-Recon       : subfinder, naabu, httpx, nuclei, nmap, amass
+Recon       : subfinder, naabu, rustscan, httpx, nuclei, nmap, amass, netmalper
 Wireless    : aircrack-ng, hashcat, tcpdump, wireshark
-Exploitation: metasploit, custom payloads
+Exploitation: metasploit, custom payloads, msfvenom, vulnmalper
 Infra       : n8n, docker, tailscale, proxmox, swarm
 
 mitch@watchdog:~$ echo $CURRENT_OBJECTIVE
@@ -147,7 +147,7 @@ Hardware-triggered, cloud-native reconnaissance platform.
 </p>
 
 <p align="center">
-Flipper Zero → ESP32 → n8n → Cloud Recon Workers → AI Analysis → Streamlit UI
+Flipper Zero → WebHook → AWS Lambda → Cloud Recon Workers → AI Analysis → Streamlit UI
 </p>
 
 ---
