@@ -90,7 +90,7 @@ mitch@watchdog:~$ echo $PHILOSOPHY
 <h3 align="center">Development</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,bash,js,rust,git" />
+  <img src="https://skillicons.dev/icons?i=python,bash,js,golang,git" />
   <p align="center">
   <img src="https://img.shields.io/badge/Open-code-00ff88?style=flat-square" />
   <img src="https://img.shields.io/badge/Gemini-CLI-00ff88?style=flat-square&logo=google-gemini&logoColor=black" />
