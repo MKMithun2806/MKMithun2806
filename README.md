@@ -4,7 +4,6 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=MKMithun2806&color=00ff88&style=flat-square">
-  <img src="https://img.shields.io/github/followers/MKMithun2806?style=flat-square&color=00ff88">
 </p>
 
 <br />
