@@ -22,9 +22,9 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ## Top Projects
 
-- 🔍 [WatchDog](https://github.com/MKMithun2806/Project-Watchdog); In Progress: [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
+- 🔍 [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
 
-  Automation-first recon pipeline that scans, analyzes, and generates AI-powered security reports
+  Automation-first ephemeral cloud recon pipeline that scans, analyzes, and saves AI-powered security reports to supabase.
 
 
 - 🌐 [NetMalper](https://github.com/MKMithun2806/NetMalper)
