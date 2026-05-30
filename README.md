@@ -251,4 +251,6 @@ flowchart TB
 
 - 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i 'pwned' ( Hacked )
 
+- [Dream infra/Homelab](https://github.com/MKMithun2806/MKMithun2806/blob/main/dreamsetup.md) 
+
 - [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
