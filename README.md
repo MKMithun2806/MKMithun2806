@@ -49,6 +49,24 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ---
 
+## 🛠️ Maintained & Contributed To
+
+<details>
+<summary><b>Click to expand repositories</b></summary>
+<br />
+
+* ⚙️ **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
+    * Rust based pixel rearrangement tool
+* 🤝 **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor / PR Author
+    * Aster is a fast, Chromium-based desktop browser natively compiled in Rust
+* 🚀 **[Sliver](https://github.com/BishopFox/sliver)** — Contributor
+    * Opened PRs: #2272, #2268
+
+
+</details>
+
+---
+
 <h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools it is to understand systems deeply enough to break them. </p>
 
 ---
