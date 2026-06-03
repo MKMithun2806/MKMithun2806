@@ -15,7 +15,7 @@
 
 ---
 
-## 🧠 About Me
+## About Me
 
 I design systems that observe, analyze, and scale. My work sits at the intersection of offensive security research and cloud-native engineering, focusing on building high-performance scanning pipelines and resilient private infrastructure.
 
