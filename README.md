@@ -45,7 +45,7 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 - In Progress [PloitMalper](https://github.com/MKMithun2806/ploitmalper)
 
-  Im working on something called ploit-malper: Still under active experimentation.
+  Vulnerability Post-Processing and Analysis Toolkit: Still under active experimentation.
 
 ---
 
