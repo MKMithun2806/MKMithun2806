@@ -60,7 +60,7 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🤝 **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor / PR Author
     * Aster is a fast, Chromium-based desktop browser natively compiled in Rust
 * 🚀 **[Sliver](https://github.com/BishopFox/sliver)** — Contributor
-    * Opened PRs: #2272, #2268
+    * Opened PRs: #2273, #2268
 
 
 </details>
