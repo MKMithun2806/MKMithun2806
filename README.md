@@ -125,33 +125,7 @@ mitch@watchdog:~$ echo $PHILOSOPHY
 
 ---
 
-<h2 align="center">🤖 AI-Augmented Development</h2>
-
-<p align="center">
-AI is not a chatbot — it's part of the system.
-</p>
-
-```bash
-Workflow:
-- Architecture design with AI
-- Rapid infra scripting (Bash / Python)
-- MCP servers for tool integration
-- Automated recon + analysis pipelines
-
-OpenClaw Setup:
-- "Steve" (The Agent): Running on AWS EC2 t4g.small
-- Role: Personal infrastructure assistant & automation engine
-- Capabilities: 
-  - GitHub management (PRs, Issues, Commits)
-  - Infrastructure monitoring & health checks
-  - Automated email & calendar management
-  - Slack/Telegram integration for real-time updates
-- Philosophy: AI doesn't replace engineering. It amplifies it.
-```
-
----
-
-<h2 align="center">🛰️ Flagship Project — Watchdog</h2>
+<h2 align="center">🛰️ Flagship Project — WatchDog</h2>
 
 <p align="center">
 Hardware-triggered, cloud-native reconnaissance platform.
@@ -181,7 +155,7 @@ flowchart TB
     A --> TS
     B --> TS
     TS --> DNS
-    subgraph OpenClaw_EC2["OpenClaw EC2 (The Brain)"]
+    subgraph OpenClaw_EC2["Hermes EC2 (The Brain)"]
         EC2_AWS["AWS t4g.small"]
         subgraph OPENCLAW_CORE[OpenClaw Core]
             OC_GATEWAY[Gateway]
