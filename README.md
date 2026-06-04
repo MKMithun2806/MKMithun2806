@@ -57,10 +57,10 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 * ⚙️ **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
     * Rust based pixel rearrangement tool
-* 🤝 **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor / PR Author
+* 🤝 **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
     * Aster is a fast, Chromium-based desktop browser natively compiled in Rust
 * 🚀 **[Sliver](https://github.com/BishopFox/sliver)** — Contributor
-    * Opened PRs: #2273, #2268
+    * Opened PRs: #2268; Merged PRs: [# 2273 ](https://github.com/BishopFox/sliver/pull/2273)
 
 
 </details>
