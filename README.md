@@ -49,26 +49,18 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ---
 
-## 🛠️ Maintained & Contributed To
+## 🛠️ Open Source Contributions
 
-<details>
-<summary><b>Click to expand repositories</b></summary>
-<br />
+- **[BishopFox Sliver](https://github.com/BishopFox/sliver)** — Contributor  
+  Merged Pull Request [#2273](https://github.com/BishopFox/sliver/pull/2273) — Made reverse port forward `KeepAlive` period configurable.
 
-* ⚙️ **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
-    * Rust based pixel rearrangement tool
-* 🤝 **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
-    * Aster is a fast, Chromium-based desktop browser natively compiled in Rust
-* 💯 **BishopFox Sliver** — Contributor
-  - [Merged PR #2273](https://github.com/BishopFox/sliver/pull/2273): Made reverse port forward KeepAlive period configurable via `--keepalive` flag.
-  -  Improved connection stability for reverse tunnels over unreliable networks.
+- **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
 
-
-</details>
+- **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
 
 ---
 
-<h2 align="center">🎯 Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools it is to understand systems deeply enough to break them. </p>
+<h2 align="center">Red Team Direction</h2> <p align="center"> Focused on learning offensive tradecraft, internal network testing, and building lab environments that simulate real targets. </p> <p align="center"> The goal is not just to use tools it is to understand systems deeply enough to break them. </p>
 
 ---
 
