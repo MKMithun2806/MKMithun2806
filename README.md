@@ -59,8 +59,9 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
     * Rust based pixel rearrangement tool
 * 🤝 **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
     * Aster is a fast, Chromium-based desktop browser natively compiled in Rust
-* 🚀 **[Sliver](https://github.com/BishopFox/sliver)** — Contributor
-    * Opened PRs: #2268; Merged PRs: [# 2273 ](https://github.com/BishopFox/sliver/pull/2273)
+* 💯 **BishopFox Sliver** — Contributor
+  - [Merged PR #2273](https://github.com/BishopFox/sliver/pull/2273): Made reverse port forward KeepAlive period configurable via `--keepalive` flag.
+  -  Improved connection stability for reverse tunnels over unreliable networks.
 
 
 </details>
