@@ -149,28 +149,29 @@ Flipper Zero → WebHook → AWS Lambda → Cloud Recon Workers → AI Analysis 
 ```mermaid
 flowchart TD
     Internet((Internet))
-    Tailscale[Tailscale Mesh VPN<br/>🔒 Zero-Trust]
+    Tailscale[Tailscale Mesh VPN<br/>Zero-Trust]
 
-    subgraph House ["🏡 House"]
-        RasPi[Raspberry Pi 4B 8GB<br/>📍 Primary Node]
-        NAS1[1TB NAS]
-        PiHole[Pi-hole<br/>Ad-blocking]
-        Jellyfin[Jellyfin]
-        Navidrome[Navidrome]
-        QB[qBittorrent]
-        Phoneinfoga[PhoneInfoga]
-        Portainer[Portainer]
-        Silverbullet[Silverbullet]
+    subgraph House ["House"]
+        RasPi[Raspberry Pi 4B 8GB<br/>📍 Primary Node<br/>🐳 Docker Swarm]:::raspi
+        NAS1[1TB NAS]:::nas
+        PiHole[Pi-hole<br/>🛡️ HA Ad-blocking]:::ha
+        Jellyfin[Jellyfin]:::service
+        Navidrome[Navidrome]:::service
+        QB[qBittorrent]:::service
+        Phoneinfoga[PhoneInfoga]:::service
+        Portainer[Portainer]:::service
+        Silverbullet[Silverbullet<br/>🛡️ HA Homepage]:::ha
     end
 
-    subgraph Studio ["🎨 Studio"]
-        Alpine[Alpine Linux Node]
-        WinNAS[Windows 10 PC<br/>2TB NAS]
-        DockerReg[Docker Registry]
-        Supabase[Supabase]
-        N8N[n8n]
-        Spiderfoot[Spiderfoot]
-        Vikunja[Vikunja]
+    subgraph Studio ["Studio"]
+        Alpine[Alpine Linux Node<br/>Docker Swarm]:::alpine
+        WinNAS[Windows 10 PC<br/>2TB NAS]:::windows
+        DockerReg[Docker Registry]:::service
+        Supabase[Supabase]:::service
+        N8N[n8n<br/>🛡️ HA]:::ha
+        Spiderfoot[Spiderfoot]:::service
+        Vikunja[Vikunja<br/>🛡️ HA]:::ha
+        Homepage[Homepage Dashboard<br/>🛡️ HA]:::ha
     end
 
     %% Connections
@@ -193,6 +194,13 @@ flowchart TD
     Alpine --- N8N
     Alpine --- Spiderfoot
     Alpine --- Vikunja
+    Alpine --- Homepage
+
+    %% Swarm & HA indicators
+    Swarm[Docker Swarm Cluster<br/>2 Nodes • High Availability]:::swarm
+
+    RasPi --- Swarm
+    Alpine --- Swarm
 
     %% Styling
     classDef raspi fill:#C8102E,stroke:#00FF88,stroke-width:3px,color:#fff
@@ -200,12 +208,16 @@ flowchart TD
     classDef windows fill:#00A300,stroke:#00FF88,stroke-width:3px,color:#fff
     classDef service fill:#2D2D2D,stroke:#00FF88,stroke-width:2px,color:#fff
     classDef nas fill:#FFD700,stroke:#00FF88,stroke-width:3px,color:#000
+    classDef ha fill:#00FF88,stroke:#fff,stroke-width:3px,color:#000,font-weight:bold
+    classDef swarm fill:#9B59B6,stroke:#fff,stroke-width:3px,color:#fff
 
     class RasPi raspi
     class Alpine alpine
     class WinNAS windows
     class NAS1 nas
-    class PiHole,Jellyfin,Navidrome,QB,Phoneinfoga,Portainer,Silverbullet,DockerReg,Supabase,N8N,Spiderfoot,Vikunja service
+    class PiHole,Silverbullet,N8N,Vikunja,Homepage ha
+    class Jellyfin,Navidrome,QB,Phoneinfoga,Portainer,DockerReg,Supabase,Spiderfoot service
+    class Swarm swarm
 
     style Internet fill:#111,stroke:#fff
     style Tailscale fill:#00FF88,stroke:#fff,color:#000,font-weight:bold
