@@ -260,3 +260,5 @@ flowchart TD
 - [Dream infra/Homelab](https://github.com/MKMithun2806/MKMithun2806/blob/main/dreamsetup.md) 
 
 - [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
+
+- [Me suffering](https://github.com/MKMithun2806/MKMithun2806/blob/main/my-evening-gone.md): trying to trouble shoot ine of my homelab nodes.
