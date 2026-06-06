@@ -208,17 +208,14 @@ flowchart TB
 <h2 align="center">📊 GitHub Metrics</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MKMithun2806&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=MKMithun2806&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=MKMithun2806&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=MKMithun2806&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=MKMithun2806&theme=tokyonight&hide_border=true&border_radius=10" height="165" alt="Streak Stats"/>
-</p>
-
+<!-- Keep your existing snake here -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MKMithun2806/MKMithun2806/output/github-snake-dark.svg" />
