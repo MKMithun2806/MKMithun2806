@@ -144,7 +144,6 @@ Flipper Zero → WebHook → AWS Lambda → Cloud Recon Workers → AI Analysis 
 
 <p align="center">
   <strong>All nodes interconnected via <code>Tailscale</code> mesh VPN • Secure zero-trust access from anywhere</strong><br>
-  <em>I'm behind the chat</em> — heavy AI user (Grok, Claude, etc.) to build and automate this setup.
 </p>
 
 ```mermaid
