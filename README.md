@@ -139,68 +139,76 @@ Flipper Zero → WebHook → AWS Lambda → Cloud Recon Workers → AI Analysis 
 
 <h2 align="center">⚙️ Infrastructure Ecosystem</h2>
 
-# Current Infra/Homelab
+## 🏠 Homelab Infrastructure
+
+<p align="center">
+  <strong>All nodes interconnected via <code>Tailscale</code> mesh VPN • Secure zero-trust access from anywhere</strong><br>
+  <em>I'm behind the chat</em> — heavy AI user (Grok, Claude, etc.) to build and automate this setup.
+</p>
 
 ```mermaid
-flowchart TB
-    subgraph Clients
-    A[Home Devices]
-    B[Studio Devices]
+flowchart TD
+    Internet((Internet))
+    Tailscale[Tailscale Mesh VPN<br/>🔒 Zero-Trust]
+
+    subgraph House ["🏡 House"]
+        RasPi[Raspberry Pi 4B 8GB<br/>📍 Primary Node]
+        NAS1[1TB NAS]
+        PiHole[Pi-hole<br/>Ad-blocking]
+        Jellyfin[Jellyfin]
+        Navidrome[Navidrome]
+        QB[qBittorrent]
+        Phoneinfoga[PhoneInfoga]
+        Portainer[Portainer]
+        Silverbullet[Silverbullet]
     end
-    subgraph Network_Fabric["Tailscale Mesh (The Glue)"]
-    TS[Tailscale VPN]
-    SWARM_NET[Docker Overlay Network]
-    DNS[Pi-hole DNS]
+
+    subgraph Studio ["🎨 Studio"]
+        Alpine[Alpine Linux Node]
+        WinNAS[Windows 10 PC<br/>2TB NAS]
+        DockerReg[Docker Registry]
+        Supabase[Supabase]
+        N8N[n8n]
+        Spiderfoot[Spiderfoot]
+        Vikunja[Vikunja]
     end
-    A --> TS
-    B --> TS
-    TS --> DNS
-    subgraph OpenClaw_EC2["Hermes EC2 (The Brain)"]
-        EC2_AWS["AWS t4g.small"]
-        subgraph OPENCLAW_CORE[OpenClaw Core]
-            OC_GATEWAY[Gateway]
-            OC_AGENT[Steve The Agent]
-            OC_SKILLS[Skills & Tools]
-        end
-        subgraph EC2_SERVICES[Services]
-            N8N_EC2[n8n]
-            GITEA_EC2[Gitea]
-            SILVER_EC2[SilverBullet]
-        end
-    end
-    subgraph Raspberry_Pi["Raspberry Pi (Home Muscle)"]
-        subgraph PI_CORE[Pi Core]
-            PI_DOCKER[Docker/Podman]
-            PI_TAIL[Tailscale Client]
-        end
-        subgraph HOME_SERVICES[Local Ops]
-            JELLY[Jellyfin]
-            NAVI[Navidrome]
-            WATCHDOG[Watchdog UI]
-            GRAFANA[Prometheus + Grafana]
-        end
-        subgraph PI_STORAGE[Local Storage]
-            NAS_1TB[/"1TB Local NAS"/]
-        end
-    end
-    subgraph Windows_Studio["Windows 10 Studio (The Vault)"]
-        WIN_DESK[Desktop Environment]
-        subgraph WIN_STORAGE[Studio NAS]
-            WIN_NAS[/"Large Media & Vault Storage"/]
-        end
-        subgraph DEV_TOOLS[Dev Environment]
-            VS_CODE[VS Code / Cursor]
-            TERM[Terminal / WSL]
-        end
-    end
+
     %% Connections
-    TS --> SWARM_NET
-    SWARM_NET --> EC2_AWS
-    SWARM_NET --> PI_DOCKER
-    SWARM_NET --> WIN_DESK
-    OC_AGENT -.->|Controls| PI_DOCKER
-    OC_AGENT -.->|Manages| WIN_DESK
-    WIN_NAS <-->|Sync| NAS_1TB
+    Internet --- Tailscale
+    Tailscale --- RasPi
+    Tailscale --- Alpine
+    Tailscale --- WinNAS
+
+    RasPi --- NAS1
+    RasPi --- PiHole
+    RasPi --- Jellyfin
+    RasPi --- Navidrome
+    RasPi --- QB
+    RasPi --- Phoneinfoga
+    RasPi --- Portainer
+    RasPi --- Silverbullet
+
+    Alpine --- DockerReg
+    Alpine --- Supabase
+    Alpine --- N8N
+    Alpine --- Spiderfoot
+    Alpine --- Vikunja
+
+    %% Styling
+    classDef raspi fill:#C8102E,stroke:#00FF88,stroke-width:3px,color:#fff
+    classDef alpine fill:#1E90FF,stroke:#00FF88,stroke-width:3px,color:#fff
+    classDef windows fill:#00A300,stroke:#00FF88,stroke-width:3px,color:#fff
+    classDef service fill:#2D2D2D,stroke:#00FF88,stroke-width:2px,color:#fff
+    classDef nas fill:#FFD700,stroke:#00FF88,stroke-width:3px,color:#000
+
+    class RasPi raspi
+    class Alpine alpine
+    class WinNAS windows
+    class NAS1 nas
+    class PiHole,Jellyfin,Navidrome,QB,Phoneinfoga,Portainer,Silverbullet,DockerReg,Supabase,N8N,Spiderfoot,Vikunja service
+
+    style Internet fill:#111,stroke:#fff
+    style Tailscale fill:#00FF88,stroke:#fff,color:#000,font-weight:bold
 ```
 
 ---
