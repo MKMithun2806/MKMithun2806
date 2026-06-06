@@ -3,7 +3,7 @@
 <!-- ======================= -->
 
 <h1 align="center">Sup, I'm Mithun Krish</h1>
-<h3 align="center">You can call me Mitch</h3>
+<h3 align="center">You can call me Mitch and im 14</h3>
 
 <p align="center">
 🛰️ <b>Developer of Random things • Red Team Aspirant • Systems & Infrastructure Specialist</b>
@@ -89,7 +89,6 @@ A custom-built Streamlit dashboard provides:
 
 A distributed cloud footprint used for reconnaissance workloads and security research.
 
-- **Oracle Cloud (OCI):** 24GB RAM ARM instances for heavy lifting  
 - **AWS:** Elastic workloads for specialized, high-intensity recon tasks  
 - **Tailscale:** A private mesh network (Tailnet) connecting cloud workers to the local control layer  
 
@@ -181,11 +180,11 @@ When the monitors are off, I'm usually in high-mobility FPS or immersive story-d
 
 - **Favs:** DOOM Eternal, Titanfall 2, Halo Infinite, Crysis, Battlefield 6, Valorant, Batman Trilogy, Ghost of Tsushima, All AC Games  
 - **Books:** Reading Art Of Deceptioon rn  
-- **Cinema:** The Space Odyssey, Interstellar, Inception  
+- **Cinema:** The Space Odyssey, Interstellar, Inception
 - **Shows:** Peaky Blinders, Stranger Things, Mr. Robot  
 
 ---
 
 <p align="center">
-  <b>⚡ Always building. Always learning. Always breaking things.</b>
+  <b>Since im 14 ( 15 next year ) I cant post on twitter or smth so im not famous yet</b>
 </p>
