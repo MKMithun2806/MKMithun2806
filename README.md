@@ -67,24 +67,25 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 <h2 align="center">💀 Offensive Profile</h2>
 
 ```bash
-mitch@watchdog:~$ whoami
-ROLE        : Red Team Aspirant
-FOCUS       : Internal Networks / Infrastructure / Physical Security
-INTEREST    : Recon automation, attack simulation, lab-built tooling
-STYLE       : Build systems that scale offensive work
+mitch@watchdog:\~$ whoami
+ROLE        : Red Team Operator Aspirant
+FOCUS       : Internal Networks • Offensive Infrastructure • Physical Security
+INTERESTS   : Recon Automation • Attack Simulation • Purpose-Built Tooling
+STYLE       : Engineer first, attacker second — build what you break
 
-mitch@watchdog:~$ maintained-projects
+mitch@watchdog:\~$ echo $CURRENT_OBJECTIVE
+"Build resilient offensive infrastructure and evolve into a capable Red Team operator"
 
-Pixelification
-ROLE        : Maintainer
-FOCUS       : GPU acceleration, image processing
-REPOSITORY  : github.com/ahyanistheEmty/pixelification
+mitch@watchdog:\~$ echo $RECENT_WINS
+→ Merged PR #2273 in BishopFox/sliver (configurable reverse portfwd KeepAlive)
+→ Maintaining & shipping Pixelification (GPU image processing)
+→ VulnMalper - pipes bruteforced credentials to sqlmap ( so it can find more endpoints)
+→ NetMalper - Smart switching from rustscan → Naabu or viceversa depending on taret
+→ PloitMalper - Added metasploit integ
+→ sthunt - Prototype works!
 
-mitch@watchdog:~$ echo $CURRENT_OBJECTIVE
-"Build scalable offensive infrastructure and grow into a real Red Team operator"
-
-mitch@watchdog:~$ echo $PHILOSOPHY
-"I actually have to know the infrastructure to break it"
+mitch@watchdog:\~$ echo $PHILOSOPHY
+"I have to deeply understand the infrastructure to truly break it."
 ```
 
 ---
