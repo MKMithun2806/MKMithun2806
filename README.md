@@ -43,7 +43,7 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
   A lightweight, interactive Go CLI tool for generating obfuscated, multi-platform reverse shell payloads on the fly.
 
-- In Progress [PloitMalper](https://github.com/MKMithun2806/ploitmalper)
+   In Progress [PloitMalper](https://github.com/MKMithun2806/ploitmalper)
 
   Vulnerability Post-Processing and Analysis Toolkit: Still under active experimentation.
 
@@ -94,7 +94,7 @@ mitch@watchdog:~$ echo $PHILOSOPHY
 <h3 align="center">Infrastructure</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,docker,aws,kubernetes,nginx,raspberrypi" />
+  <img src="https://skillicons.dev/icons?i=linux,docker,aws,nginx,raspberrypi,supabase" />
   <br/>
   <img src="https://img.shields.io/badge/n8n-Workflow%20Automation-00ff88?style=flat-square" />
   <img src="https://img.shields.io/badge/OpenWrt-Router%20OS-00ff88?style=flat-square&logo=openwrt&logoColor=black" />
