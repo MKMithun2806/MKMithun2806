@@ -208,11 +208,15 @@ flowchart TB
 <h2 align="center">📊 GitHub Metrics</h2>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=MKMithun2806&background=0D1117&border=00ff88&stroke=00ff88&ring=00ff88&fire=00ff88&currStreakLabel=00ff88&sideLabels=C9D1D9&currStreakNum=C9D1D9&dates=8B949E&sideNums=C9D1D9" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=MKMithun2806&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MKMithun2806&theme=chartreuse-dark&hide_border=true"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=MKMithun2806&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=MKMithun2806&theme=tokyonight&hide_border=true&border_radius=10" height="165" alt="Streak Stats"/>
 </p>
 
 <p align="center">
