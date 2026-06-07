@@ -22,30 +22,27 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ## Top Projects
 
-- 🔍 [*Watchdog-V2*](https://github.com/MKMithun2806/Project-Watchdog-V2)
+* 🔍 **[Watchdog-V2](https://github.com/MKMithun2806/Project-Watchdog-V2)**
+  Automation-first ephemeral cloud reconnaissance pipeline that scans, analyzes, and generates AI-powered security reports stored in Supabase.
 
-  Automation-first ephemeral cloud recon pipeline that scans, analyzes, and saves AI-powered security reports to supabase.
+* 🌐 **[NetMalper](https://github.com/MKMithun2806/NetMalper)**
+  Network discovery and attack-surface mapping platform that visualizes infrastructure relationships as an interactive graph.
 
+* 🧪 **[VulnMalper](https://github.com/MKMithun2806/VulnMalper)**
+  Vulnerability analysis pipeline that consumes NetMalper graphs. Fingerprint → Scan → Verify, with each stage enriching the next.
 
-- 🌐 [NetMalper](https://github.com/MKMithun2806/NetMalper)
+* 🐚 **[ShellCraft](https://github.com/MKMithun2806/ShellCraft)**
+  Lightweight Go CLI for generating cross-platform payloads and shell commands with a fast, interactive workflow.
 
-  Network scanning and mapping tool for discovering devices and attack surface in a Graph
+---
 
-- 🧪 [VulnMalper](https://github.com/MKMithun2806/VulnMalper)
+## 🚧 Currently Building
 
-  Vulnerability pipeline that eats NetMalper graphs. Fingerprint → Scan → Verify, with every stage feeding the next.
-  
-- 🐉 [sthunt](https://github.com/MKMithun2806/sthunt)
+* ⚡ **[PloitMalper](https://github.com/MKMithun2806/ploitmalper)**
+  Post-exploitation analysis and vulnerability intelligence toolkit focused on validation, enrichment, and workflow automation.
 
-  A professional, stealthy fingerprinting tool to detect WAFs, IDS/IPS, and security layers with a modern CLI.
-
-- 🐚 [ShellCraft](https://github.com/MKMithun2806/ShellCraft)
-
-  A lightweight, interactive Go CLI tool for generating obfuscated, multi-platform reverse shell payloads on the fly.
-
-   In Progress [PloitMalper](https://github.com/MKMithun2806/ploitmalper)
-
-  Vulnerability Post-Processing and Analysis Toolkit: Still under active experimentation.
+* 🐉 **[STHUNT](https://github.com/MKMithun2806/sthunt)**
+  Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience.
 
 ---
 
