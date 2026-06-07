@@ -44,6 +44,8 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🐉 **[STHUNT](https://github.com/MKMithun2806/sthunt)**
   Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience.
 
+* 🐉 **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
+  fast, no-TUI, CLI-only version of proxy-scraper-checker focused on ease of use while keeping the same high-quality technical core.
 ---
 
 ## 🛠️ Open Source Contributions
