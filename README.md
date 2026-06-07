@@ -41,7 +41,7 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * ⚡ **[PloitMalper](https://github.com/MKMithun2806/ploitmalper)**
   Post-exploitation analysis and vulnerability intelligence toolkit focused on validation, enrichment, and workflow automation.
 
-* 🐉 **[STHUNT](https://github.com/MKMithun2806/sthunt)**
+* 🐉 **STHUNT**
   Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience.
 
 * 💀 **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
