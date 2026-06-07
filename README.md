@@ -35,9 +35,9 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
   Vulnerability pipeline that eats NetMalper graphs. Fingerprint → Scan → Verify, with every stage feeding the next.
   
-- 🐉 [Kali Mcp Server](https://github.com/MKMithun2806/Kali-pentesting-mcp)
+- 🐉 [sthunt](https://github.com/MKMithun2806/sthunt)
 
-  Security testing tools exposed as MCP tools for use with Claude Desktop via Docker MCP Toolkit.
+  A professional, stealthy fingerprinting tool to detect WAFs, IDS/IPS, and security layers with a modern CLI.
 
 - 🐚 [ShellCraft](https://github.com/MKMithun2806/ShellCraft)
 
