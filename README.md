@@ -34,6 +34,9 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🐚 **[ShellCraft](https://github.com/MKMithun2806/ShellCraft)**
   Lightweight Go CLI for generating cross-platform payloads and shell commands with a fast, interactive workflow.
 
+* 💀 **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
+  fast, no-TUI, CLI-only version of proxy-scraper-checker focused on ease of use while keeping the same high-quality technical core. [ Stable ]
+
 ---
 
 ## 🚧 Currently Building
@@ -44,8 +47,6 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🐉 **[SThunt](https://github.com/MKMithun2806/sthunt)**
   Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience. [ Not so stable ]
 
-* 💀 **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
-  fast, no-TUI, CLI-only version of proxy-scraper-checker focused on ease of use while keeping the same high-quality technical core. [ Stable ]
 ---
 
 ## 🛠️ Open Source Contributions
