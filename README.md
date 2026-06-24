@@ -47,6 +47,8 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🐉 **[SThunt](https://github.com/MKMithun2806/sthunt)**
   Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience. [ Not so stable ]
 
+* ▶️ **[DLX](https://github.com/MKMithun2806/DLX)**
+  Privacy-first, self-hosted, youtube mirror stack; Similar to TubeArchiveist [ Stable But not main focus ]. Note that this is a side project, and my main focus isnt in this 
 ---
 
 ## 🛠️ Open Source Contributions
