@@ -221,7 +221,7 @@ flowchart TD
 ```
 ---
 
-## Niche Projecta
+## Niche Projects
 > I dont know why i made these
 
 * ▶️ **[DLX](https://github.com/MKMithun2806/DLX)**
