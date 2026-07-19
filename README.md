@@ -40,7 +40,7 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ### General 
 
-* 🐚 **[PBctl](github.com/MKMithun2806/pbctl)**
+* 🐚 **[PBctl](https://github.com/MKMithun2806/pbctl)**
   **Infrastructure-as-Code for PocketBase** — A Rust CLI powered by PBSL (PocketBase Schema Language).  
 Define collections as code, validate schemas, preview changes with `plan`, and apply them safely. Export live schemas, keep everything in Git, and treat PocketBase as runtime state.
   
