@@ -22,6 +22,8 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ## Top Projects
 
+### Recon Pipelines
+
 * 🔍 **[Watchdog-V2](https://github.com/MKMithun2806/Project-Watchdog-V2)**
   Automation-first ephemeral cloud reconnaissance pipeline that scans, analyzes, and generates AI-powered security reports stored in Supabase.
 
@@ -31,9 +33,17 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🧪 **[VulnMalper](https://github.com/MKMithun2806/VulnMalper)**
   Vulnerability analysis pipeline that consumes NetMalper graphs. Fingerprint → Scan → Verify, with each stage enriching the next.
 
+### Hacking Tools
+
 * 🐚 **[ShellCraft](https://github.com/MKMithun2806/ShellCraft)**
   Lightweight Go CLI for generating cross-platform payloads and shell commands with a fast, interactive workflow.
 
+### General 
+
+* 🐚 **[PBctl](github.com/MKMithun2806/pbctl)**
+  **Infrastructure-as-Code for PocketBase** — A Rust CLI powered by PBSL (PocketBase Schema Language).  
+Define collections as code, validate schemas, preview changes with `plan`, and apply them safely. Export live schemas, keep everything in Git, and treat PocketBase as runtime state.
+  
 ---
 
 ## 🚧 Currently Building
