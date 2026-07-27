@@ -38,6 +38,9 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * 🐚 **[ShellCraft](https://github.com/MKMithun2806/ShellCraft)**
   Lightweight Go CLI for generating cross-platform payloads and shell commands with a fast, interactive workflow.
 
+* ⚡ **[PloitMalper](https://github.com/MKMithun2806/ploitmalper)**
+  Post-exploitation analysis and vulnerability intelligence toolkit focused on validation, enrichment, and workflow automation. [ Stable ]
+
 ### General 
 
 * 🏪 **[PBctl](https://github.com/MKMithun2806/pbctl)**
@@ -47,9 +50,6 @@ Define collections as code, validate schemas, preview changes with `plan`, and a
 ---
 
 ## 🚧 Currently Building
-
-* ⚡ **[PloitMalper](https://github.com/MKMithun2806/ploitmalper)**
-  Post-exploitation analysis and vulnerability intelligence toolkit focused on validation, enrichment, and workflow automation. [ Stable ]
 
 * 🐉 **[SThunt](https://github.com/MKMithun2806/sthunt)**
   Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience. [ Not so stable ] [ Niche Project ]
