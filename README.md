@@ -60,6 +60,8 @@ Define collections as code, validate schemas, preview changes with `plan`, and a
 
 - **[BishopFox Sliver](https://github.com/BishopFox/sliver)** — Contributor  
   Merged Pull Request [#2273](https://github.com/BishopFox/sliver/pull/2273) — Made reverse port forward `KeepAlive` period configurable.
+  
+  Merged Pull Request [#2316](https://github.com/BishopFox/sliver/pull/2316) - Update docs to mention absence of the "stagers" subcommand.
 
 - **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
 
