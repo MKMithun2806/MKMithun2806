@@ -186,5 +186,5 @@ When the monitors are off, I'm usually in high-mobility FPS or immersive story-d
 ---
 
 <p align="center">
-  <b>Since im 14 ( 15 next year ) I cant post on twitter or smth so im not famous yet</b>
+  <b>Since im 15 ( 16 next year ) I cant post on twitter or smth so im not famous yet</b>
 </p>
