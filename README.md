@@ -63,6 +63,8 @@ Define collections as code, validate schemas, preview changes with `plan`, and a
   
   Merged Pull Request [#2316](https://github.com/BishopFox/sliver/pull/2316) - Update docs to mention absence of the "stagers" command.
 
+  Merged Pull Request [#2318](https://github.com/BishopFox/sliver/pull/2318) - fix: Default missing http-c2.json header probability to 100
+
 - **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
 
 - **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
