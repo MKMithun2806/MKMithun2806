@@ -65,6 +65,10 @@ Define collections as code, validate schemas, preview changes with `plan`, and a
 
   Merged Pull Request [#2318](https://github.com/BishopFox/sliver/pull/2318) - fix: Default missing http-c2.json header probability to 100
 
+  Merged Pull Request [#2324](https://github.com/BishopFox/sliver/pull/2324) - feat: Add --external-builder support to profiles generate
+
+  ... I'm not keeping track anymore.
+
 - **[Pixelification](https://github.com/ahyanistheEmty/pixelification)** — Core Maintainer
 
 - **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
