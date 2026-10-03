@@ -73,7 +73,7 @@ Define collections as code, validate schemas, preview changes with `plan`, and a
 
 - **[Aster Browser](https://github.com/ahyanistheEmty/Aster)** — Contributor
 
-- **[sub-tui](https://github.com/MattiaPun/SubTUI)** — Not a contributor yet [PR tho](https://github.com/MattiaPun/SubTUI/pull/148)
+- **[sub-tui](https://github.com/MattiaPun/SubTUI)** — Contributor [148](https://github.com/MattiaPun/SubTUI/pull/148)
 
 ---
 
