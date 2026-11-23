@@ -51,14 +51,7 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 * **[PBctl](https://github.com/MKMithun2806/pbctl)**
   **Infrastructure-as-Code for PocketBase** — A Rust CLI powered by PBSL (PocketBase Schema Language).  
 Define collections as code, validate schemas, preview changes with `plan`, and apply them safely. Export live schemas, keep everything in Git, and treat PocketBase as runtime state.
-  
----
 
-## Currently Building
-
-* **[SThunt](https://github.com/MKMithun2806/sthunt)**
-  Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience. [ Not so stable ] [ Niche Project ]
-  
 ---
 
 ## Open Source Contributions
