@@ -143,18 +143,6 @@ mitch@watchdog:\~$ echo $PHILOSOPHY
 
 ---
 
-<h2 align="center">🛰️ Flagship Project — WatchDog</h2>
-
-<p align="center">
-Hardware-triggered, cloud-native reconnaissance platform.
-</p>
-
-<p align="center">
-Flipper Zero → WebHook → AWS Lambda → Cloud Recon Workers → AI Analysis → Streamlit UI
-</p>
-
----
-
 <h2 align="center">⚙️ Infrastructure Ecosystem</h2>
 
 ## 🏠 Homelab Infrastructure
