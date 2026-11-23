@@ -24,39 +24,44 @@ Building offensive infrastructure from the ground up; recon pipelines, cloud-nat
 
 ### Recon Pipelines
 
-* 🔍 **[Watchdog-V2](https://github.com/MKMithun2806/Project-Watchdog-V2)**
+* **[Watchdog-V2](https://github.com/MKMithun2806/Project-Watchdog-V2)**
   Automation-first ephemeral cloud reconnaissance pipeline that scans, analyzes, and generates AI-powered security reports stored in Supabase.
 
-* 🌐 **[NetMalper](https://github.com/MKMithun2806/NetMalper)**
+* **[NetMalper](https://github.com/MKMithun2806/NetMalper)**
   Network discovery and attack-surface mapping platform that visualizes infrastructure relationships as an interactive graph.
 
-* 🧪 **[VulnMalper](https://github.com/MKMithun2806/VulnMalper)**
+* **[VulnMalper](https://github.com/MKMithun2806/VulnMalper)**
   Vulnerability analysis pipeline that consumes NetMalper graphs. Fingerprint → Scan → Verify, with each stage enriching the next.
 
 ### Hacking Tools
 
-* 🐚 **[ShellCraft](https://github.com/MKMithun2806/ShellCraft)**
+* **[ShellCraft](https://github.com/MKMithun2806/ShellCraft)**
   Lightweight Go CLI for generating cross-platform payloads and shell commands with a fast, interactive workflow.
 
-* ⚡ **[PloitMalper](https://github.com/MKMithun2806/ploitmalper)**
+* **[PloitMalper](https://github.com/MKMithun2806/ploitmalper)**
   Post-exploitation analysis and vulnerability intelligence toolkit focused on validation, enrichment, and workflow automation. [ Stable ]
+* **[exploitdb-gui](https://github.com/MKMithun2806/exploitdb-gui)**
+  exploitdb-gui is a native Rust desktop application that brings Exploit-DB and SearchSploit functionality into a gui.
 
+* **[cyn](https://github.com/MKMithun2806/cyn)**
+  lightweight CLI vulnerability scanner built on the OpenVAS scanning engine and exposes the scanner as a single Rust binary.
+  
 ### General 
 
-* 🏪 **[PBctl](https://github.com/MKMithun2806/pbctl)**
+* **[PBctl](https://github.com/MKMithun2806/pbctl)**
   **Infrastructure-as-Code for PocketBase** — A Rust CLI powered by PBSL (PocketBase Schema Language).  
 Define collections as code, validate schemas, preview changes with `plan`, and apply them safely. Export live schemas, keep everything in Git, and treat PocketBase as runtime state.
   
 ---
 
-## 🚧 Currently Building
+## Currently Building
 
-* 🐉 **[SThunt](https://github.com/MKMithun2806/sthunt)**
+* **[SThunt](https://github.com/MKMithun2806/sthunt)**
   Stealth-focused fingerprinting framework for identifying WAFs, IDS/IPS solutions, CDNs, and layered security controls through a modern CLI experience. [ Not so stable ] [ Niche Project ]
   
 ---
 
-## 🛠️ Open Source Contributions
+## Open Source Contributions
 
 - **[BishopFox Sliver](https://github.com/BishopFox/sliver)** — Contributor  
   Merged Pull Request [#2273](https://github.com/BishopFox/sliver/pull/2273) — Made reverse port forward `KeepAlive` period configurable.
@@ -81,7 +86,7 @@ Define collections as code, validate schemas, preview changes with `plan`, and a
 
 ---
 
-<h2 align="center">💀 Offensive Profile</h2>
+<h2 align="center">Offensive Profile</h2>
 
 ```bash
 mitch@watchdog:\~$ whoami
@@ -107,7 +112,7 @@ mitch@watchdog:\~$ echo $PHILOSOPHY
 
 ---
 
-<h2 align="center">⚡ Core Stack</h2>
+<h2 align="center">Core Stack</h2>
 
 <h3 align="center">Infrastructure</h3>
 
@@ -143,9 +148,9 @@ mitch@watchdog:\~$ echo $PHILOSOPHY
 
 ---
 
-<h2 align="center">⚙️ Infrastructure Ecosystem</h2>
+<h2 align="center">Infrastructure Ecosystem</h2>
 
-## 🏠 Homelab Infrastructure
+## Homelab Infrastructure
 
 <p align="center">
   <strong>All nodes interconnected via <code>Tailscale</code> mesh VPN • Secure zero-trust access from anywhere</strong><br>
@@ -232,10 +237,10 @@ flowchart TD
 ## Niche Projects
 > I dont know why i made these
 
-* ▶️ **[DLX](https://github.com/MKMithun2806/DLX)**
+* **[DLX](https://github.com/MKMithun2806/DLX)**
   Privacy-first, self-hosted, youtube mirror stack; Similar to TubeArchiveist just more simplified and lightweight
 
-* 💀 **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
+* **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
   fast, no-TUI, CLI-only version of proxy-scraper-checker focused on ease of use while keeping the same high-quality technical core. [ Stable ]
   
 ---
@@ -266,14 +271,14 @@ flowchart TD
 
 ---
 
-## 🔗 Explore More
+## Explore More
 
-- 🧠 [About Me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md): Nah, Dont Read This
+- [About Me](https://github.com/MKMithun2806/MKMithun2806/blob/main/Aboutme.md): Nah, Dont Read This
 
-- 🔴 [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i 'pwned' ( Hacked )
+- [Security Reports](https://github.com/MKMithun2806/Security-Reports): Reports of Stuff i 'pwned' ( Hacked )
 
 - [Dream infra/Homelab](https://github.com/MKMithun2806/MKMithun2806/blob/main/dreamsetup.md) 
 
-- [⚙️ Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
+- [Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
 
 - [Me suffering](https://github.com/MKMithun2806/MKMithun2806/blob/main/my-evening-gone.md): trying to trouble shoot ine of my homelab nodes.
