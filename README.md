@@ -235,6 +235,12 @@ flowchart TD
 
 * **[ProxyHunt](https://github.com/MKMithun2806/proxyhunt)**
   fast, no-TUI, CLI-only version of proxy-scraper-checker focused on ease of use while keeping the same high-quality technical core. [ Stable ]
+
+* **[knightfall](https://github.com/MKMithun2806/knightfall-demo)**
+  Prototype game made with godot for NASA space challenge, Godot 4.7.2 prototype about running a damaged lunar lander and sending rovers out to find and recover a water-ice sample
+
+* **[msf-webui](https://github.com/MKMithun2806/msf-webui)**
+  A lightweight, single-binary Go web UI for MSFRPC and Metasploit.
   
 ---
 
