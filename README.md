@@ -281,3 +281,5 @@ flowchart TD
 - [Homelab Deep Dive](https://github.com/MKMithun2806/MKMithun2806/blob/main/Homelab-docs.md): A Comprehensive explanation of my HomeServer
 
 - [Me suffering](https://github.com/MKMithun2806/MKMithun2806/blob/main/my-evening-gone.md): trying to trouble shoot ine of my homelab nodes.
+
+- [Failed PRs](https://github.com/MKMithun2806/MKMithun2806/blob/main/Failed-prs.md): PRs that were closed :(
